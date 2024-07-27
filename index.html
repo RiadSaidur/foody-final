@@ -23,13 +23,18 @@
 
         .btn-primary {
             background-color: #e23744;
-            border: none;
+            border: 1px solid #e23744;
         }
 
         .btn-secondary {
             background-color: #FEFEFE;
             color: #e23744;
             border: none;
+        }
+
+        .nav-link {
+            color: #545454;
+            font-weight: bold;
         }
     </style>
     <title>Document</title>
@@ -39,16 +44,15 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="./assets/logo.png" alt="logo">
-                <span>Fuudy</span>
+                <img src="./assets/footer-logo.png" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2">
+            <div class="collapse navbar-collapse row" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 col-9 justify-content-center">
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#">Home</a>
                     </li>
@@ -62,13 +66,17 @@
                         <a class="nav-link" href="#">Become a Hero</a>
                     </li>
                 </ul>
-                <ul class="navbar-nav mb-2">
+                <ul class="navbar-nav mb-2 col-3 justify-content-end">
                     <li class="nav-item">
-                        <span>Signup</span>
+                        <a class="nav-link btn mt-3 px-4 btn btn-primary bg-white" href="#">
+                            <span class="text-highlight">Signup</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <span>Contact</span>
-                        <img src="./assets/arrow.png" alt="arrow">
+                        <a class="nav-link" href="#">
+                            <span class="btn btn-primary px-4 py-2">Contact</span>
+                            <img src="./assets/arrow.png" alt="arrow">
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -99,8 +107,8 @@
         </div>
     </section>
 
-    <section id="cta" class="d-flex gap-3 mt-5">
-        <div class="card flex-row p-4 mt-5">
+    <section id="cta" class="d-flex gap-3 row my-5 pt-5">
+        <div class="col card flex-row p-4 mt-5">
             <img src="./assets/forks.png" alt="forks">
             <div class="card-body d-flex flex-column justify-content-between align-items-start py-0">
                 <h5 class="card-title fw-bold">List Your Restaurant on Fuudy</h5>
@@ -110,7 +118,7 @@
             </div>
         </div>
         
-        <div class="card flex-row p-4 mt-5">
+        <div class=" col card flex-row p-4 mt-5">
             <img src="./assets/rider.png" alt="rider">
             <div class="card-body d-flex flex-column justify-content-between align-items-start py-0">
                 <h5 class="card-title fw-bold">Become a Fuddy Hero</h5>
@@ -121,7 +129,7 @@
         </div>
     </section>
 
-    <section id="cities" class="mt-5">
+    <section id="cities" class="my-5">
         <h2 class="fw-bold mt-5" style="font-size: 48px;">Find us in these cities and many more!</h2>
         <div class="d-flex justify-content-between mt-5">
             <div style="position: relative;">
@@ -162,7 +170,7 @@
         </div>
     </section>
 
-    <section id="info" class="mt-5 mx-lg-5">
+    <section id="info" class="my-5 mx-lg-5">
         <div class="d-flex gap-5">
             <div class="w-50">
                 <p class="text-highlight fw-bold">WHAT WE DO</p>
@@ -204,7 +212,7 @@
         </div>
     </section>
 
-    <section id="features" class="mx-lg-5">
+    <section id="features" class="mx-lg-5 my-5">
         <h2 class="fw-bold text-center mt-5" style="font-size: 48px;">Key Features</h2>
         <div class="d-flex justify-content-between gap-3 mt-5">
             <div class="card p-3">
@@ -240,7 +248,7 @@
         </div>
     </section>
 
-    <section id="app">
+    <section id="app" class="my-5">
         <h2 class="fw-bold text-center mt-5 pt-5" style="font-size: 48px;">App Download</h2>
         <div class="mt-5 pt-5 mx-lg-5 d-flex justify-content-between gap-3">
             <div class="card flex-fill" style="position: relative;">
@@ -290,7 +298,7 @@
         </div>
     </section>
 
-    <section id="store" class="mx-lg-5 d-flex justify-content-between align-items-center">
+    <section id="store" class="mx-lg-5 my-5 d-flex justify-content-between align-items-center">
         <div>
             <p class="text-highlight fw-bold" style="font-size: 18px; margin-top: -72px;">DOWNLOAD APP</p>
             <h2 class="fw-bold mt-3" style="font-size: 48px;">Get Started With <br> Today!</h2>
@@ -315,7 +323,7 @@
         </div>
     </section>
 
-    <section id="clients" class="mx-lg-5">
+    <section id="clients" class="mx-lg-5 my-5">
         <h2 class="fw-bold text-center" style="font-size: 48px;">Our Clients</h2>
         <div class="d-flex gap-4 mt-5">
             <div class="card p-4">
@@ -363,7 +371,7 @@
         </div>
     </section>
 
-    <footer>
+    <footer class="mt-5">
         <div class="row mt-5 pt-5 mx-lg-5">
             <div class="col-4">
                 <img src="./assets/footer-logo.png" alt="logo.png">
