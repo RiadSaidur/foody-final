@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <style>
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .text-highlight {
+            color: #e23744;
+        }
+
+        .btn {
+            border-radius: 40px;
+        }
+
+        .btn-primary {
+            background-color: #e23744;
+            border: 1px solid #e23744;
+        }
+
+        .btn-secondary {
+            background-color: #FEFEFE;
+            color: #e23744;
+            border: none;
+        }
+
+        .nav-link {
+            color: #545454;
+            font-weight: bold;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body class="d-flex flex-column m-auto" style="max-width: 1440px; padding: 0 2rem;">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/footer-logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse row" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 col-9 justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Featured</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Become a Hero</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Become a Hero</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mb-2 col-3 justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link btn mt-3 px-4 btn btn-primary bg-white" href="#">
+                            <span class="text-highlight">Signup</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="btn btn-primary px-4 py-2">Contact</span>
+                            <img src="./assets/arrow.png" alt="arrow">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="mb-5 text-white d-flex align-items-center justify-content-center"
+        style="background: url('./assets/bg-contact.png') no-repeat center; height: 380px;">
+        <div class="text-center">
+            <div>
+                <p style="font-size: 24px;">Home &#8594; <span class="fw-bold">Partner</span></p>
+            </div>
+            <h1 class="fw-bold" style="font-size: 54px;">Become a partner</h1>
+        </div>
+    </section>
+
+    <section id="info" class="my-5 text-center d-flex justify-content-center">
+        <div style="max-width: 991px;">
+            <h2 class="mt-2 fw-bold" style="font-size: 24px;">
+                Excited? To become our partner and boost your revenue, <br>
+                complete the form below!
+            </h2>
+            <p class="mt-4">
+                We're craving the greatest things in life, like serving our customers the greatest food and updating the shopping experience. Foodi is a rapidly growing company that manages to retain its appeal as a locally focused service with a strong sense of community.
+            </p>
+        </div>
+    </section>
+
+    <section id="appointment" class="my-5 border rounded p-5" style="margin: 60px;">
+        <form class="d-flex flex-column">
+            <div class="mb-3">
+                <label for="outlet" class="form-label">Outlet Name <span class="text-highlight">*</span></label>
+                    <input type="text" placeholder="Type your outlet name here"
+                        class="form-control px-3 py-2 text-white " id="outlet"
+                        aria-describedby="outlet" style="background: none;">
+            </div>
+            <div class="row">
+                <div class="mb-3 col-6">
+                    <label for="firstName" class="form-label">First Name <span class="text-highlight">*</span></label>
+                    <input type="text" placeholder="Type your first name here"
+                        class="form-control px-3 py-2 text-white " id="firstName"
+                        aria-describedby="firstName" style="background: none;">
+                </div>
+                <div class="mb-3 col-6">
+                    <label for="lastName" class="form-label">Last Name <span class="text-highlight">*</span></label>
+                    <input type="text" placeholder="Type your last name here"
+                        class="form-control px-3 py-2 text-white " id="lastName"
+                        aria-describedby="lastName" style="background: none;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="mb-3 col-6">
+                    <label for="email" class="form-label">Email Address  <span class="text-highlight">*</span></label>
+                    <input type="email" placeholder="Type your email ID here"
+                        class="form-control px-3 py-2 text-white " id="email"
+                        aria-describedby="emailHelp" style="background: none;">
+                </div>
+                <div class="mb-3 col-6">
+                    <label for="phone" class="form-label">Phone no <span class="text-highlight">*</span></label>
+                    <input type="text" placeholder="Type your phone here"
+                        class="form-control px-3 py-2 text-white " id="phone"
+                        aria-describedby="emailHelp" style="background: none;">
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="business" class="form-label">Business Address <span class="text-highlight">*</span></label>
+                    <input type="text" placeholder="Type your business address here"
+                        class="form-control px-3 py-2 text-white " id="business"
+                        aria-describedby="business" style="background: none;">
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary py-2 mt-3 fw-bold"
+                    style="width: fit-content; padding-right: 72px; padding-left: 72px;">Submit Message</button>
+            </div>
+        </form>
+    </section>
+
+    <footer class="mt-5">
+        <div class="row mt-5 pt-5 mx-lg-5">
+            <div class="col-4">
+                <img src="./assets/footer-logo.png" alt="logo.png">
+                <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quos maiores,
+                    necessitatibus autem
+                    eveniet iure ipsum expedita libero perspiciatis nulla!</p>
+            </div>
+            <div class="col-4">
+                <h4 class="text-highlight fw-bold">Our Office</h4>
+                <p class="mt-4">
+                    Main Rd, Petrusville, 8770, <br> South Africa
+                </p>
+            </div>
+            <div class="col-4">
+                <h4 class="text-highlight fw-bold">Get in Touch</h4>
+                <div class="mt-4">
+                    <div>
+                        <img src="./assets/telephone.png" alt="telephone.png">
+                        <span class="ms-2">+27536630108</span>
+                    </div>
+                    <div>
+                        <img src="./assets/mail.png" alt="mail.png">
+                        <span class="ms-2">joinfuudy@example.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="my-4">
+            <h5 class="text-center">
+                Copyright © 2022 Fuudy.
+            </h5>
+        </div>
+    </footer>
+</body>
+
+</html>
