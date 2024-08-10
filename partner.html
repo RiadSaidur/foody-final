@@ -41,6 +41,12 @@
             color: #545454;
             font-weight: bold;
         }
+
+        @media (min-width: 1160px) {
+            .w-1160 {
+                width: 1160px;
+            }
+        }
     </style>
     <title>Document</title>
 </head>
@@ -79,7 +85,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
-                            <span class="btn btn-primary px-4 py-2">Contact</span>
+                            <span class="btn btn-primary p-2">Contact</span>
                             <img src="./assets/arrow.png" alt="arrow">
                         </a>
                     </li>
@@ -105,7 +111,9 @@
                 complete the form below!
             </h2>
             <p class="mt-4">
-                We're craving the greatest things in life, like serving our customers the greatest food and updating the shopping experience. Foodi is a rapidly growing company that manages to retain its appeal as a locally focused service with a strong sense of community.
+                We're craving the greatest things in life, like serving our customers the greatest food and updating the
+                shopping experience. Foodi is a rapidly growing company that manages to retain its appeal as a locally
+                focused service with a strong sense of community.
             </p>
         </div>
     </section>
@@ -114,49 +122,81 @@
         <form class="d-flex flex-column">
             <div class="mb-3">
                 <label for="outlet" class="form-label">Outlet Name <span class="text-highlight">*</span></label>
-                    <input type="text" placeholder="Type your outlet name here"
-                        class="form-control px-3 py-2 text-white " id="outlet"
-                        aria-describedby="outlet" style="background: none;">
+                <input type="text" placeholder="Type your outlet name here" class="form-control px-3 py-2 text-white "
+                    id="outlet" aria-describedby="outlet" style="background: none;">
             </div>
             <div class="row">
                 <div class="mb-3 col-6">
                     <label for="firstName" class="form-label">First Name <span class="text-highlight">*</span></label>
                     <input type="text" placeholder="Type your first name here"
-                        class="form-control px-3 py-2 text-white " id="firstName"
-                        aria-describedby="firstName" style="background: none;">
+                        class="form-control px-3 py-2 text-white " id="firstName" aria-describedby="firstName"
+                        style="background: none;">
                 </div>
                 <div class="mb-3 col-6">
                     <label for="lastName" class="form-label">Last Name <span class="text-highlight">*</span></label>
-                    <input type="text" placeholder="Type your last name here"
-                        class="form-control px-3 py-2 text-white " id="lastName"
-                        aria-describedby="lastName" style="background: none;">
+                    <input type="text" placeholder="Type your last name here" class="form-control px-3 py-2 text-white "
+                        id="lastName" aria-describedby="lastName" style="background: none;">
                 </div>
             </div>
             <div class="row">
                 <div class="mb-3 col-6">
-                    <label for="email" class="form-label">Email Address  <span class="text-highlight">*</span></label>
-                    <input type="email" placeholder="Type your email ID here"
-                        class="form-control px-3 py-2 text-white " id="email"
-                        aria-describedby="emailHelp" style="background: none;">
+                    <label for="email" class="form-label">Email Address <span class="text-highlight">*</span></label>
+                    <input type="email" placeholder="Type your email ID here" class="form-control px-3 py-2 text-white "
+                        id="email" aria-describedby="emailHelp" style="background: none;">
                 </div>
                 <div class="mb-3 col-6">
                     <label for="phone" class="form-label">Phone no <span class="text-highlight">*</span></label>
-                    <input type="text" placeholder="Type your phone here"
-                        class="form-control px-3 py-2 text-white " id="phone"
-                        aria-describedby="emailHelp" style="background: none;">
+                    <input type="text" placeholder="Type your phone here" class="form-control px-3 py-2 text-white "
+                        id="phone" aria-describedby="emailHelp" style="background: none;">
                 </div>
             </div>
             <div class="mb-3">
                 <label for="business" class="form-label">Business Address <span class="text-highlight">*</span></label>
-                    <input type="text" placeholder="Type your business address here"
-                        class="form-control px-3 py-2 text-white " id="business"
-                        aria-describedby="business" style="background: none;">
+                <input type="text" placeholder="Type your business address here"
+                    class="form-control px-3 py-2 text-white " id="business" aria-describedby="business"
+                    style="background: none;">
             </div>
             <div class="text-center">
                 <button type="submit" class="btn btn-primary py-2 mt-3 fw-bold"
                     style="width: fit-content; padding-right: 72px; padding-left: 72px;">Submit Message</button>
             </div>
         </form>
+    </section>
+
+    <section id="app" class="my-5 d-flex flex-column align-items-center">
+        <h2 class="fw-bold text-center" style="font-size: 48px;">App Download</h2>
+        <div class="w-1160 mt-4">
+            <div class="d-flex gap-4 justify-content-center">
+                <div class="p-4 border rounded d-flex justify-content-around w-100 gap-4">
+                    <img src="./assets/icon-account.png" alt="icon-account.png" style="height: 61px;">
+                    <div class="w-100">
+                        <h5 class="fw-bold">Step 01</h5>
+                        <p>Sign Up Online</p>
+                    </div>
+                </div>
+                <div class="p-4 border rounded d-flex justify-content-around w-100 gap-4">
+                    <img src="./assets/icon-account.png" alt="icon-account.png" style="height: 61px;">
+                    <div class="w-100">
+                        <h5 class="fw-bold">Step 02</h5>
+                        <p>We will contact</p>
+                    </div>
+                </div>
+                <div class="p-4 border rounded d-flex justify-content-around w-100 gap-4">
+                    <img src="./assets/icon-account.png" alt="icon-account.png" style="height: 61px;">
+                    <div class="w-100">
+                        <h5 class="fw-bold">Step 03</h5>
+                        <p>Sign the contract</p>
+                    </div>
+                </div>
+                <div class="p-4 border rounded d-flex justify-content-around w-100 gap-4">
+                    <img src="./assets/icon-account.png" alt="icon-account.png" style="height: 61px;">
+                    <div class="w-100">
+                        <h5 class="fw-bold">Step 04</h5>
+                        <p>Go on live</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer class="mt-5">
