@@ -36,6 +36,24 @@
             color: #545454;
             font-weight: bold;
         }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        footer {
+            position: relative;
+        }
+
+        footer::before {
+            position: absolute;
+            content: "";
+            height: 1px;
+            width: 200vw;
+            border: 1px solid rgba(128, 128, 128, 0.1);
+            top: 0;
+            left: -50vw;
+        }
     </style>
     <title>Document</title>
 </head>
@@ -174,7 +192,7 @@
         <div class="d-flex gap-5">
             <div class="w-50">
                 <p class="text-highlight fw-bold">WHAT WE DO</p>
-                <h2 class="fw-bold">
+                <h2 class="fw-bold" style="font-size: 48px;">
                     What we <span class="text-highlight">do</span> to <br> <span class="text-highlight">help</span> you
                 </h2>
             </div>
@@ -251,7 +269,7 @@
     <section id="app" class="my-5">
         <h2 class="fw-bold text-center mt-5 pt-5" style="font-size: 48px;">App Download</h2>
         <div class="mt-5 pt-5 mx-lg-5 d-flex justify-content-between gap-3">
-            <div class="card flex-fill" style="position: relative;">
+            <div class="card flex-fill shadow-sm" style="position: relative; border: none;">
                 <div style="position: absolute; top: -40%; right: 1rem">
                     <img src="./assets/download.png" class="card-img-top" alt="download.png">
                 </div>
@@ -262,7 +280,7 @@
                     </p>
                 </div>
             </div>
-            <div class="card flex-fill" style="position: relative;">
+            <div class="card flex-fill shadow-sm" style="position: relative; border: none;">
                 <div style="position: absolute; top: -40%; right: 1rem">
                     <img src="./assets/smily.png" class="card-img-top" alt="smily.png">
                 </div>
@@ -273,7 +291,7 @@
                     </p>
                 </div>
             </div>
-            <div class="card flex-fill" style="position: relative;">
+            <div class="card flex-fill shadow-sm" style="position: relative; border: none;">
                 <div style="position: absolute; top: -40%; right: 1rem">
                     <img src="./assets/accounts.png" class="card-img-top" alt="accounts.png">
                 </div>
@@ -284,7 +302,7 @@
                     </p>
                 </div>
             </div>
-            <div class="card flex-fill" style="position: relative;">
+            <div class="card flex-fill shadow-sm" style="position: relative; border: none;">
                 <div style="position: absolute; top: -40%; right: 1rem">
                     <img src="./assets/star.png" class="card-img-top" alt="star.png">
                 </div>
@@ -399,7 +417,7 @@
             </div>
         </div>
         <div class="my-4">
-            <h5 class="text-center">
+            <h5 class="text-center" style="font-size: 16px;">
                 Copyright © 2022 Fuudy.
             </h5>
         </div>

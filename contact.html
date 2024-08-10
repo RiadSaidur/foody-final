@@ -50,6 +50,24 @@
             background-color: #e23744 !important;
         }
 
+        body {
+            overflow-x: hidden;
+        }
+
+        footer {
+            position: relative;
+        }
+
+        footer::before {
+            position: absolute;
+            content: "";
+            height: 1px;
+            width: 200vw;
+            border: 1px solid rgba(128, 128, 128, 0.1);
+            top: 0;
+            left: -50vw;
+        }
+
         .white-placeholder::placeholder {
             color: white;
         }
@@ -205,7 +223,7 @@
             </div>
         </div>
         <div class="my-4">
-            <h5 class="text-center">
+            <h5 class="text-center" style="font-size: 16px;">
                 Copyright © 2022 Fuudy.
             </h5>
         </div>
