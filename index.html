@@ -54,6 +54,20 @@
             top: 0;
             left: -50vw;
         }
+
+        .fs-60 {
+            font-size: 60px;
+        }
+
+        .fs-48 {
+            font-size: 48px;
+        }
+
+        @media (max-width: 480px) {
+            .fs-60, fs-48, fs-38 {
+                font-size: 36px;
+            }
+        }
     </style>
     <title>Document</title>
 </head>
@@ -70,7 +84,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse row" id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 col-9 justify-content-center">
+                <ul class="navbar-nav mb-2 col-12 col-lg-9 justify-content-center">
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#">Home</a>
                     </li>
@@ -84,7 +98,7 @@
                         <a class="nav-link" href="#">Become a Hero</a>
                     </li>
                 </ul>
-                <ul class="navbar-nav mb-2 col-3 justify-content-end">
+                <ul class="navbar-nav mb-2 col-12 col-lg-3 justify-content-end">
                     <li class="nav-item">
                         <a class="nav-link btn mt-3 px-4 btn btn-primary bg-white" href="#">
                             <span class="text-highlight">Signup</span>
@@ -101,9 +115,9 @@
         </div>
     </nav>
 
-    <section id="hero" class="d-flex" style="background-color: #E23744;">
-        <div class="ms-5 m-auto text-white">
-            <h1 class="fw-bold" style="font-size: 60px;">
+    <section id="hero" class="d-flex flex-column-reverse flex-md-row pb-5 pb-lg-0" style="background-color: #E23744;">
+        <div class="ms-3 ms-lg-5 m-auto text-white">
+            <h1 class="fw-bold fs-60">
                 <span class="fw-bolder d-block">Now Restaurant</span>
                 <span>In YOUR POCKET !</span>
             </h1>
@@ -121,35 +135,37 @@
             </button>
         </div>
         <div>
-            <img src="./assets/hero-demo-iphone.png" alt="demo">
+            <img src="./assets/hero-demo-iphone.png" alt="demo" class="img-fluid w-100 w-sm-50">
         </div>
     </section>
 
-    <section id="cta" class="d-flex gap-3 row my-5 pt-5">
-        <div class="col card flex-row p-4 mt-5">
-            <img src="./assets/forks.png" alt="forks">
-            <div class="card-body d-flex flex-column justify-content-between align-items-start py-0">
+    <section id="cta" class="d-flex gap-3 row my-0 my-lg-5 pt-0 pt-lg-5">
+        <div class="col-12 col-lg card flex-column flex-lg-row p-4 mt-5">
+            <img src="./assets/forks.png" alt="forks" class="img-fluid">
+            <div class="mt-3 mt-lg-0 card-body d-flex flex-column justify-content-between align-items-start py-0">
                 <h5 class="card-title fw-bold">List Your Restaurant on Fuudy</h5>
-                <p class="card-text">Would you like millions of new customers to enjoy your amazing food and groceries? Let's start our
+                <p class="card-text">Would you like millions of new customers to enjoy your amazing food and groceries?
+                    Let's start our
                     partnership today!</p>
-                    <a href="#" class="btn btn-primary py-2 px-4">Become a Hero</a>
+                <a href="#" class="btn btn-primary py-2 px-4">Become a Hero</a>
             </div>
         </div>
-        
-        <div class=" col card flex-row p-4 mt-5">
+
+        <div class="col-12 col-lg card flex-column flex-lg-row p-4 mt-5">
             <img src="./assets/rider.png" alt="rider">
-            <div class="card-body d-flex flex-column justify-content-between align-items-start py-0">
+            <div class="mt-3 mt-lg-0 card-body d-flex flex-column justify-content-between align-items-start py-0">
                 <h5 class="card-title fw-bold">Become a Fuddy Hero</h5>
-                <p class="card-text">Are you a man of speed and a master of navigation? Become a Fuudy Hero and earn up to R25,000 TK
+                <p class="card-text">Are you a man of speed and a master of navigation? Become a Fuudy Hero and earn up
+                    to R25,000 TK
                     each month while spreading joy to the doorsteps.</p>
                 <a href="#" class="btn btn-primary py-2 px-4">Become a Partner</a>
             </div>
         </div>
     </section>
 
-    <section id="cities" class="my-5">
-        <h2 class="fw-bold mt-5" style="font-size: 48px;">Find us in these cities and many more!</h2>
-        <div class="d-flex justify-content-between mt-5">
+    <section id="cities" class="my-0 my-lg-5">
+        <h2 class="fw-bold mt-5 fs-48">Find us in these cities and many more!</h2>
+        <div class="d-flex flex-column flex-lg-row gap-2 justify-content-between align-items-center mt-5">
             <div style="position: relative;">
                 <img src="./assets/city.png" alt="city">
                 <div class="text-white fw-bold" style="position: absolute; bottom: 0; left: 1rem;">
@@ -189,15 +205,15 @@
     </section>
 
     <section id="info" class="my-5 mx-lg-5">
-        <div class="d-flex gap-5">
-            <div class="w-50">
+        <div class="d-flex flex-column flex-lg-row gap-2 gap-lg-5">
+            <div class="w-lg-50">
                 <p class="text-highlight fw-bold">WHAT WE DO</p>
-                <h2 class="fw-bold" style="font-size: 48px;">
+                <h2 class="fw-bold fs-48">
                     What we <span class="text-highlight">do</span> to <br> <span class="text-highlight">help</span> you
                 </h2>
             </div>
             <div class="align-self-center">
-                <p class="w-75 ms-4">
+                <p class="w-100 w-lg-75 ms-lg-4">
                     In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the
                     visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be
                     used as a placeholder before final copy is available.
@@ -205,22 +221,22 @@
             </div>
         </div>
 
-        <div class="mt-5 d-flex justify-content-between">
-            <div class="d-flex flex-column align-items-center">
+        <div class="mt-5 d-flex flex-column flex-lg-row gap-3 justify-content-between">
+            <div class="p-5 d-flex flex-column align-items-center shadow-sm rounded">
                 <img src="./assets/order.png" alt="order">
                 <div class="text-center mt-4">
                     <p class="fw-bold fs-4">Easy to Order</p>
                     <p>You only need a few steps in ordering food</p>
                 </div>
             </div>
-            <div class="d-flex flex-column align-items-center">
+            <div class="p-5 d-flex flex-column align-items-center shadow-sm rounded">
                 <img src="./assets/delivery.png" alt="delivery">
                 <div class="text-center mt-4">
                     <p class="fw-bold fs-4">Fastest Delivery</p>
                     <p>You only need a few steps in ordering food</p>
                 </div>
             </div>
-            <div class="d-flex flex-column align-items-center">
+            <div class="p-5 d-flex flex-column align-items-center shadow-sm rounded">
                 <img src="./assets/quality.png" alt="quality">
                 <div class="text-center mt-4">
                     <p class="fw-bold fs-4">Best Quality</p>
@@ -230,9 +246,9 @@
         </div>
     </section>
 
-    <section id="features" class="mx-lg-5 my-5">
-        <h2 class="fw-bold text-center mt-5" style="font-size: 48px;">Key Features</h2>
-        <div class="d-flex justify-content-between gap-3 mt-5">
+    <section id="features" class="mx-lg-5 my-0 my-lg-5">
+        <h2 class="fw-bold text-center mt-lg-5 fs-48">Key Features</h2>
+        <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 mt-5">
             <div class="card p-3">
                 <img src="./assets/order-processing.png" class="card-img-top" alt="order-processing">
                 <div class="card-body">
@@ -267,14 +283,14 @@
     </section>
 
     <section id="app" class="my-5">
-        <h2 class="fw-bold text-center mt-5 pt-5" style="font-size: 48px;">App Download</h2>
-        <div class="mt-5 pt-5 mx-lg-5 d-flex justify-content-between gap-3">
+        <h2 class="fw-bold text-center mt-lg-5 pt-lg-5 fs-48">App Download</h2>
+        <div class="mt-5 pt-5 mx-lg-5 d-flex flex-column flex-lg-row justify-content-between gap-3">
             <div class="card flex-fill shadow-sm" style="position: relative; border: none;">
                 <div style="position: absolute; top: -40%; right: 1rem">
-                    <img src="./assets/download.png" class="card-img-top" alt="download.png">
+                    <img src="./assets/download.png" class="card-img-top img-fluid" alt="download.png">
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title fw-bold" style="font-size: 38px;">1000</h5>
+                    <h5 class="card-title fw-bold fs-38">1000</h5>
                     <p class="card-text">
                         App Downloads
                     </p>
@@ -282,10 +298,10 @@
             </div>
             <div class="card flex-fill shadow-sm" style="position: relative; border: none;">
                 <div style="position: absolute; top: -40%; right: 1rem">
-                    <img src="./assets/smily.png" class="card-img-top" alt="smily.png">
+                    <img src="./assets/smily.png" class="card-img-top img-fluid" alt="smily.png">
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title fw-bold" style="font-size: 38px;">1000</h5>
+                    <h5 class="card-title fw-bold fs-38">1000</h5>
                     <p class="card-text">
                         Happy Clients
                     </p>
@@ -293,10 +309,10 @@
             </div>
             <div class="card flex-fill shadow-sm" style="position: relative; border: none;">
                 <div style="position: absolute; top: -40%; right: 1rem">
-                    <img src="./assets/accounts.png" class="card-img-top" alt="accounts.png">
+                    <img src="./assets/accounts.png" class="card-img-top img-fluid" alt="accounts.png">
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title fw-bold" style="font-size: 38px;">1000</h5>
+                    <h5 class="card-title fw-bold fs-38">1000</h5>
                     <p class="card-text">
                         Active Accounts
                     </p>
@@ -304,10 +320,10 @@
             </div>
             <div class="card flex-fill shadow-sm" style="position: relative; border: none;">
                 <div style="position: absolute; top: -40%; right: 1rem">
-                    <img src="./assets/star.png" class="card-img-top" alt="star.png">
+                    <img src="./assets/star.png" class="card-img-top img-fluid" alt="star.png">
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title fw-bold" style="font-size: 38px;">1000</h5>
+                    <h5 class="card-title fw-bold fs-38">1000</h5>
                     <p class="card-text">
                         Total App Stars
                     </p>
@@ -316,18 +332,18 @@
         </div>
     </section>
 
-    <section id="store" class="mx-lg-5 my-5 d-flex justify-content-between align-items-center">
+    <section id="store" class="mx-lg-5 my-lg-5 d-flex flex-column-reverse flex-lg-row justify-content-between align-items-center">
         <div>
             <p class="text-highlight fw-bold" style="font-size: 18px; margin-top: -72px;">DOWNLOAD APP</p>
-            <h2 class="fw-bold mt-3" style="font-size: 48px;">Get Started With <br> Today!</h2>
+            <h2 class="fw-bold mt-3 fs-48">Get Started With <br> Today!</h2>
             <p class="mt-3" style="font-size: 18px;">
                 Discover food wherever and whenever and get your food <br>
-                 delivered quickly.
+                delivered quickly.
             </p>
             <button class="btn btn-primary mt-3 px-5 py-3">
                 Get The App
             </button>
-            <div class="mt-5" style="margin-left: -18px;">
+            <div class="mt-5 d-flex flex-column" style="margin-left: -18px;">
                 <a href="#">
                     <img src="./assets/play-store.png" alt="play-store.png">
                 </a>
@@ -337,15 +353,16 @@
             </div>
         </div>
         <div>
-            <img src="./assets/cta-iphone.png" alt="cta-iphone.png">
+            <img src="./assets/cta-iphone.png" alt="cta-iphone.png" class="img-fluid w-75 w-lg-100">
         </div>
     </section>
 
     <section id="clients" class="mx-lg-5 my-5">
         <h2 class="fw-bold text-center" style="font-size: 48px;">Our Clients</h2>
-        <div class="d-flex gap-4 mt-5">
+        <div class="d-flex flex-column flex-lg-row gap-4 mt-5">
             <div class="card p-4">
-                <img src="./assets/client.png" alt="client.png" class="card-img-top ms-3" style="height: 57px; width: 57px;">
+                <img src="./assets/client.png" alt="client.png" class="card-img-top ms-3"
+                    style="height: 57px; width: 57px;">
                 <div class="card-body mt-3">
                     <p class="card-title">
                         “You made it so simple. My new site is so much faster and easier to work with than my old site.”
@@ -359,7 +376,8 @@
                 </div>
             </div>
             <div class="card p-4">
-                <img src="./assets/client.png" alt="client.png" class="card-img-top ms-3" style="height: 57px; width: 57px;">
+                <img src="./assets/client.png" alt="client.png" class="card-img-top ms-3"
+                    style="height: 57px; width: 57px;">
                 <div class="card-body">
                     <p class="card-title">
                         “You made it so simple. My new site is so much faster and easier to work with than my old site.”
@@ -373,7 +391,8 @@
                 </div>
             </div>
             <div class="card p-4">
-                <img src="./assets/client.png" alt="client.png" class="card-img-top ms-3" style="height: 57px; width: 57px;">
+                <img src="./assets/client.png" alt="client.png" class="card-img-top ms-3"
+                    style="height: 57px; width: 57px;">
                 <div class="card-body">
                     <p class="card-title">
                         “You made it so simple. My new site is so much faster and easier to work with than my old site.”
@@ -391,18 +410,19 @@
 
     <footer class="mt-5">
         <div class="row mt-5 pt-5 mx-lg-5">
-            <div class="col-4">
+            <div class="col-12 col-lg-4">
                 <img src="./assets/footer-logo.png" alt="logo.png">
-                <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quos maiores, necessitatibus autem
+                <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quos maiores,
+                    necessitatibus autem
                     eveniet iure ipsum expedita libero perspiciatis nulla!</p>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-lg-4">
                 <h4 class="text-highlight fw-bold">Our Office</h4>
                 <p class="mt-4">
                     Main Rd, Petrusville, 8770, <br> South Africa
                 </p>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-lg-4">
                 <h4 class="text-highlight fw-bold">Get in Touch</h4>
                 <div class="mt-4">
                     <div>
