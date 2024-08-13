@@ -68,9 +68,37 @@
             left: -50vw;
         }
 
+        .m-60 {
+            margin: 60px;
+        }
+
+        .px-72 {
+            padding-left: 72px;
+            padding-right: 72px;
+        }
+
+        .fs-54 {
+            font-size: 54px;
+        }
+
         @media (min-width: 1160px) {
             .w-1160 {
                 width: 1160px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .m-60 {
+                margin: 0px;
+            }
+
+            .px-72 {
+                padding-left: 32px;
+                padding-right: 32px;
+            }
+
+            .fs-54 {
+                font-size: 36px;
             }
         }
     </style>
@@ -126,7 +154,7 @@
             <div>
                 <p style="font-size: 24px;">Home &#8594; <span class="fw-bold">Partner</span></p>
             </div>
-            <h1 class="fw-bold" style="font-size: 54px;">Become a partner</h1>
+            <h1 class="fw-bold fs-54">Become a partner</h1>
         </div>
     </section>
 
@@ -144,7 +172,7 @@
         </div>
     </section>
 
-    <section id="appointment" class="my-5 border rounded p-5" style="margin: 60px;">
+    <section id="appointment" class="my-5 border rounded p-5 m-60">
         <form class="d-flex flex-column">
             <div class="mb-3">
                 <label for="outlet" class="form-label">Outlet Name <span class="text-highlight">*</span></label>
@@ -152,25 +180,25 @@
                     id="outlet" aria-describedby="outlet" style="background: none;">
             </div>
             <div class="row">
-                <div class="mb-3 col-6">
+                <div class="mb-3 col-12 col-lg-6">
                     <label for="firstName" class="form-label">First Name <span class="text-highlight">*</span></label>
                     <input type="text" placeholder="Type your first name here"
                         class="form-control px-3 py-2 text-white " id="firstName" aria-describedby="firstName"
                         style="background: none;">
                 </div>
-                <div class="mb-3 col-6">
+                <div class="mb-3 col-12 col-lg-6">
                     <label for="lastName" class="form-label">Last Name <span class="text-highlight">*</span></label>
                     <input type="text" placeholder="Type your last name here" class="form-control px-3 py-2 text-white "
                         id="lastName" aria-describedby="lastName" style="background: none;">
                 </div>
             </div>
             <div class="row">
-                <div class="mb-3 col-6">
+                <div class="mb-3 col-12 col-lg-6">
                     <label for="email" class="form-label">Email Address <span class="text-highlight">*</span></label>
                     <input type="email" placeholder="Type your email ID here" class="form-control px-3 py-2 text-white "
                         id="email" aria-describedby="emailHelp" style="background: none;">
                 </div>
-                <div class="mb-3 col-6">
+                <div class="mb-3 col-12 col-lg-6">
                     <label for="phone" class="form-label">Phone no <span class="text-highlight">*</span></label>
                     <input type="text" placeholder="Type your phone here" class="form-control px-3 py-2 text-white "
                         id="phone" aria-describedby="emailHelp" style="background: none;">
@@ -183,8 +211,8 @@
                     style="background: none;">
             </div>
             <div class="text-center">
-                <button type="submit" class="btn btn-primary py-2 mt-3 fw-bold"
-                    style="width: fit-content; padding-right: 72px; padding-left: 72px;">Submit Message</button>
+                <button type="submit" class="btn btn-primary py-2 mt-3 fw-bold px-72"
+                    style="width: fit-content;">Submit Message</button>
             </div>
         </form>
     </section>
@@ -192,7 +220,7 @@
     <section id="app" class="my-5 d-flex flex-column align-items-center">
         <h2 class="fw-bold text-center" style="font-size: 48px;">App Download</h2>
         <div class="w-1160 mt-4">
-            <div class="d-flex gap-4 justify-content-center">
+            <div class="d-flex flex-column flex-lg-row gap-4 justify-content-center">
                 <div class="p-4 rounded d-flex justify-content-around w-100 gap-4 shadow-sm">
                     <img src="./assets/icon-account.png" alt="icon-account.png" style="height: 61px;">
                     <div class="w-100">
@@ -231,8 +259,8 @@
         </h2>
         <p class="text-center mt-3">In publishing and graphic design, Lorem ipsum is a placeholder text commonly <br>
              used to demonstrate the visual form of a document .</p>
-        <div class="d-flex my-5 gap-4">
-            <div class="d-flex gap-4">
+        <div class="d-flex flex-column-reverse flex-lg-row my-5 gap-4">
+            <div class="d-flex flex-column flex-lg-row gap-4">
                 <div class="d-flex flex-column gap-4">
                     <div class="border rounded border-primary p-4 bg-primary">
                         <img src="./assets/icon-bell.png" alt="icon-bell.png">
@@ -258,8 +286,8 @@
                     </div>
                 </div>
             </div>
-            <div>
-                <img src="./assets/burger.png" alt="burger">
+            <div class="w-100 w-lg-50">
+                <img src="./assets/burger.png" alt="burger" class="w-100 w-lg-50">
             </div>
         </div>
     </section>
@@ -269,22 +297,22 @@
         <p class="text-center mt-4">In publishing and graphic design, Lorem ipsum is a placeholder text commonly <br> used to demonstrate the visual form of a document .</p>
         <div class="my-5">
             <div class="text-center row gap-4">
-                <div class="p-5 rounded shadow-sm d-flex flex-column align-items-center col">
+                <div class="p-5 rounded shadow-sm d-flex flex-column align-items-center col-12 col-lg">
                     <img src="./assets/icon-restaurant.png" alt="icon-restaurant.png">
                     <p class="fw-bold mt-4">Select Restaurant</p>
                     <p>The customer chooses a nearby restaurant or shop and inputs a delivery address via the app or website.</p>
                 </div>
-                <div class="p-5 rounded shadow-sm d-flex flex-column align-items-center col bg-primary text-white">
+                <div class="p-5 rounded shadow-sm d-flex flex-column align-items-center col-12 col-lg bg-primary text-white">
                     <img src="./assets/icon-tracking.png" alt="icon-tracking.png">
                     <p class="fw-bold mt-4">Order Taking</p>
                     <p>The restaurant or store uses the tablet that foodi provides to take orders, and they immediately begin preparing the order. </p>
                 </div>
-                <div class="p-5 rounded shadow-sm d-flex flex-column align-items-center col">
+                <div class="p-5 rounded shadow-sm d-flex flex-column align-items-center col-12 col-lg">
                     <img src="./assets/icon-order-placing.png" alt="icon-order-placing.png">
                     <p class="fw-bold mt-4">Order Placing</p>
                     <p>Within 30 minutes of the order being placed, our rider shows up on time to pick it up and delivers it.</p>
                 </div>
-                <div class="p-5 rounded shadow-sm d-flex flex-column align-items-center col">
+                <div class="p-5 rounded shadow-sm d-flex flex-column align-items-center col-12 col-lg">
                     <img src="./assets/icon-restaurant.png" alt="icon-restaurant.png">
                     <p class="fw-bold mt-4">Payment</p>
                     <p>Each month, Fuudy sends you money earned from your orders and gives you full performance data</p>
@@ -295,19 +323,19 @@
 
     <footer class="mt-5">
         <div class="row mt-5 pt-5 mx-lg-5">
-            <div class="col-4">
+            <div class="col-12 col-lg-4">
                 <img src="./assets/footer-logo.png" alt="logo.png">
                 <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quos maiores,
                     necessitatibus autem
                     eveniet iure ipsum expedita libero perspiciatis nulla!</p>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-lg-4">
                 <h4 class="text-highlight fw-bold">Our Office</h4>
                 <p class="mt-4">
                     Main Rd, Petrusville, 8770, <br> South Africa
                 </p>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-lg-4">
                 <h4 class="text-highlight fw-bold">Get in Touch</h4>
                 <div class="mt-4">
                     <div>
