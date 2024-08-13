@@ -71,6 +71,33 @@
         .white-placeholder::placeholder {
             color: white;
         }
+
+        .fs-54 {
+            font-size: 54px;
+        }
+
+        .fs-48 {
+            font-size: 48px;
+        }
+        
+        .m-60 {
+            margin: 60px;
+        }
+
+        @media (max-width: 480px) {
+            .m-60 {
+                margin: 0px;
+            }
+
+            .px-72 {
+                padding-left: 32px;
+                padding-right: 32px;
+            }
+
+            .fs-54, .fs-48 {
+                font-size: 36px;
+            }
+        }
     </style>
     <title>Document</title>
 </head>
@@ -124,14 +151,14 @@
             <div>
                 <p style="font-size: 24px;">Home &#8594; <span class="fw-bold">Contact</span></p>
             </div>
-            <h1 class="fw-bold" style="font-size: 54px;">Contact Us</h1>
+            <h1 class="fw-bold fs-54">Contact Us</h1>
         </div>
     </section>
 
     <section id="info" class="my-5 text-center d-flex justify-content-center">
         <div style="max-width: 991px;">
             <p class="text-highlight fw-bold">Get in Touch</p>
-            <h2 class="mt-2 fw-bold" style="font-size: 48px;">
+            <h2 class="mt-2 fw-bold fs-48">
                 <span>Please Don't Hesitate to Contact Us</span>
                 <br>
                 <span class="text-highlight fw-bold">with Any Inquiries or Messages.</span>
@@ -143,7 +170,7 @@
         </div>
     </section>
 
-    <section id="contact" class="my-5 d-flex justify-content-around">
+    <section id="contact" class="my-5 d-flex flex-column flex-lg-row gap-4 justify-content-around">
         <div class="p-5 border rounded border-primary d-flex flex-column gap-3 justify-content-center align-items-center"
             style="height: 250px; width: 330px;">
             <img src="./assets/icon-phone.png" alt="phone">
@@ -165,25 +192,25 @@
         </div>
     </section>
 
-    <section id="appointment" class="my-5 rounded p-5 text-white" style="background-color: #e23744; margin: 60px;">
+    <section id="appointment" class="my-5 rounded p-5 text-white m-60" style="background-color: #e23744;">
         <h2 class="text-center fw-bold">Make an Appointment</h2>
         <form class="d-flex flex-column mt-5">
             <div class="row">
-                <div class="mb-3 col-6">
+                <div class="mb-3 col-12 col-lg-6">
                     <label for="firstName" class="form-label">First Name</label>
                     <input type="text" placeholder="Type your first name here" class="form-control px-3 py-2 text-white white-placeholder" id="firstName" aria-describedby="firstName" style="background: none;">
                 </div>
-                <div class="mb-3 col-6">
+                <div class="mb-3 col-12 col-lg-6">
                     <label for="lastName" class="form-label">Last Name</label>
                     <input type="text" placeholder="Type your last name here" class="form-control px-3 py-2 text-white white-placeholder" id="lastName" aria-describedby="lastName" style="background: none;">
                 </div>
             </div>
             <div class="row">
-                <div class="mb-3 col-6">
+                <div class="mb-3 col-12 col-lg-6">
                     <label for="email" class="form-label">Email Address</label>
                     <input type="email" placeholder="Type your email ID here" class="form-control px-3 py-2 text-white white-placeholder" id="email" aria-describedby="emailHelp" style="background: none;">
                 </div>
-                <div class="mb-3 col-6">
+                <div class="mb-3 col-12 col-lg-6">
                     <label for="phone" class="form-label">Phone no</label>
                     <input type="text" placeholder="Type your phone here" class="form-control px-3 py-2 text-white white-placeholder" id="phone" aria-describedby="emailHelp" style="background: none;">
                 </div>
@@ -196,19 +223,19 @@
 
     <footer class="mt-5">
         <div class="row mt-5 pt-5 mx-lg-5">
-            <div class="col-4">
+            <div class="col-12 col-lg-4">
                 <img src="./assets/footer-logo.png" alt="logo.png">
                 <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quos maiores,
                     necessitatibus autem
                     eveniet iure ipsum expedita libero perspiciatis nulla!</p>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-lg-4">
                 <h4 class="text-highlight fw-bold">Our Office</h4>
                 <p class="mt-4">
                     Main Rd, Petrusville, 8770, <br> South Africa
                 </p>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-lg-4">
                 <h4 class="text-highlight fw-bold">Get in Touch</h4>
                 <div class="mt-4">
                     <div>
