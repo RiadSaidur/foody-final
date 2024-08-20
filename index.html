@@ -63,6 +63,33 @@
             font-size: 48px;
         }
 
+        .scroll-row {
+            overflow-x: auto;
+            scroll-behavior: smooth;
+        }
+
+        .scroll-row::-webkit-scrollbar-track {
+            background: none; /* Removes the background of the scrollbar track */
+        }
+
+        .scroll-row::-webkit-scrollbar-thumb {
+            background-color: #888; /* Color of the scrollbar thumb */
+            border-radius: 10px;     /* Rounded corners for the scrollbar thumb */
+            border: 2px solid transparent; /* Optional: create a space around the thumb */
+        }
+
+        .scroll-row::-webkit-scrollbar-thumb:hover {
+            background-color: #555; /* Darker color on hover */
+        }
+
+        /* Firefox */
+        .scroll-row {
+            scrollbar-color: #888 transparent; /* Thumb color and track background color */
+        }
+
+
+
+
         @media (max-width: 480px) {
             .fs-60, fs-48, fs-38 {
                 font-size: 36px;
@@ -88,7 +115,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse row" id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 col-12 col-lg-8 justify-content-center">
+                <ul class="navbar-nav mb-2 col-12 col-md-7 justify-content-end">
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#">Home</a>
                     </li>
@@ -102,7 +129,7 @@
                         <a class="nav-link" href="#">Become a Hero</a>
                     </li>
                 </ul>
-                <ul class="navbar-nav mb-2 col-12 col-lg-4 justify-content-end">
+                <ul class="navbar-nav mb-2 col-12 col-md-5 justify-content-end">
                     <li class="nav-item">
                         <a class="nav-link btn mt-3 px-4 btn btn-primary bg-white" href="#">
                             <span class="text-highlight">Signup</span>
@@ -144,7 +171,7 @@
     </section>
 
     <section id="cta" class="d-flex gap-3 row my-0 my-lg-5 pt-0 pt-lg-5 px-3">
-        <div class="col-12 col-lg card flex-column flex-lg-row p-4 mt-5">
+        <div class="col-12 col-md card flex-column flex-lg-row p-4 mt-5">
             <img src="./assets/forks.png" alt="forks" class="img-fluid">
             <div class="mt-3 mt-lg-0 card-body d-flex flex-column justify-content-between align-items-start py-0">
                 <h5 class="card-title fw-bold">List Your Restaurant on Fuudy</h5>
@@ -155,7 +182,7 @@
             </div>
         </div>
 
-        <div class="col-12 col-lg card flex-column flex-lg-row p-4 mt-5">
+        <div class="col-12 col-md card flex-column flex-lg-row p-4 mt-5">
             <img src="./assets/rider.png" alt="rider">
             <div class="mt-3 mt-lg-0 card-body d-flex flex-column justify-content-between align-items-start py-0">
                 <h5 class="card-title fw-bold">Become a Fuddy Hero</h5>
@@ -169,7 +196,7 @@
 
     <section id="cities" class="my-0 my-lg-5">
         <h2 class="fw-bold mt-5 fs-48">Find us in these cities and many more!</h2>
-        <div class="d-flex flex-column flex-lg-row gap-2 justify-content-between align-items-center mt-5">
+        <div class="d-flex flex-column flex-md-row gap-2 justify-content-between align-items-center mt-5 scroll-row">
             <div style="position: relative;">
                 <img src="./assets/city.png" alt="city">
                 <div class="text-white fw-bold" style="position: absolute; bottom: 0; left: 1rem;">
@@ -210,7 +237,7 @@
 
     <section id="info" class="my-5 mx-lg-5">
         <div class="d-flex flex-column flex-lg-row gap-2 gap-lg-5">
-            <div class="w-lg-50">
+            <div class="w-75 w-lg-50">
                 <p class="text-highlight fw-bold">WHAT WE DO</p>
                 <h2 class="fw-bold fs-48">
                     What we <span class="text-highlight">do</span> to <br> <span class="text-highlight">help</span> you
