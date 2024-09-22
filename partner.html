@@ -32,6 +32,10 @@
             color: #e23744;
         }
 
+        .text-highlight-hover:hover > span {
+            color: #2D2D2D;
+        }
+
         .btn {
             border-radius: 40px;
         }
@@ -145,40 +149,47 @@
             <a class="navbar-brand" href="#">
                 <img src="./assets/footer-logo.png" alt="logo">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse row" id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 col-12 col-md-7 justify-content-end">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                    <img src="./assets/footer-logo.png" alt="logo">
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav mb-2 col-12 col-md-7 justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Featured</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Become a Hero</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Become a Hero</a>
+                        </li>
+                    </ul>
+                  <ul class="navbar-nav mb-2 col-12 col-md-5 justify-content-end">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Featured</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Become a Hero</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Become a Hero</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav mb-2 col-12 col-md-5 justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link btn mt-3 px-4 btn btn-primary bg-white" href="#">
+                        <a class="nav-link btn mt-3 px-4 btn btn-primary bg-white text-highlight-hover" href="#">
                             <span class="text-highlight">Signup</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
-                            <span class="btn btn-primary px-4 py-2 w-sm-100">Contact</span>
+                            <span class="btn btn-primary px-4 py-2 w-100">Contact</span>
                             <img src="./assets/arrow.png" alt="arrow" class="d-none d-lg-inline-block">
                         </a>
                     </li>
                 </ul>
-            </div>
+                </div>
+              </div>
         </div>
     </nav>
 
@@ -206,41 +217,41 @@
         </div>
     </section>
 
-    <section id="appointment" class="my-5 border rounded p-5 m-60">
+    <section id="appointment" class="my-5 border rounded p-md-5 px-3 py-5 m-60">
         <form class="d-flex flex-column">
             <div class="mb-3">
                 <label for="outlet" class="form-label">Outlet Name <span class="text-highlight">*</span></label>
-                <input type="text" placeholder="Type your outlet name here" class="form-control px-3 py-2 text-white "
+                <input type="text" placeholder="Outlet Name" class="form-control px-3 py-2 text-white "
                     id="outlet" aria-describedby="outlet" style="background: none;">
             </div>
             <div class="row">
                 <div class="mb-3 col-12 col-lg-6">
                     <label for="firstName" class="form-label">First Name <span class="text-highlight">*</span></label>
-                    <input type="text" placeholder="Type your first name here"
+                    <input type="text" placeholder="First Name"
                         class="form-control px-3 py-2 text-white " id="firstName" aria-describedby="firstName"
                         style="background: none;">
                 </div>
                 <div class="mb-3 col-12 col-lg-6">
                     <label for="lastName" class="form-label">Last Name <span class="text-highlight">*</span></label>
-                    <input type="text" placeholder="Type your last name here" class="form-control px-3 py-2 text-white "
+                    <input type="text" placeholder="Last Name" class="form-control px-3 py-2 text-white "
                         id="lastName" aria-describedby="lastName" style="background: none;">
                 </div>
             </div>
             <div class="row">
                 <div class="mb-3 col-12 col-lg-6">
                     <label for="email" class="form-label">Email Address <span class="text-highlight">*</span></label>
-                    <input type="email" placeholder="Type your email ID here" class="form-control px-3 py-2 text-white "
+                    <input type="email" placeholder="Email" class="form-control px-3 py-2 text-white "
                         id="email" aria-describedby="emailHelp" style="background: none;">
                 </div>
                 <div class="mb-3 col-12 col-lg-6">
                     <label for="phone" class="form-label">Phone no <span class="text-highlight">*</span></label>
-                    <input type="text" placeholder="Type your phone here" class="form-control px-3 py-2 text-white "
+                    <input type="text" placeholder="Phone" class="form-control px-3 py-2 text-white "
                         id="phone" aria-describedby="emailHelp" style="background: none;">
                 </div>
             </div>
             <div class="mb-3">
                 <label for="business" class="form-label">Business Address <span class="text-highlight">*</span></label>
-                <input type="text" placeholder="Type your business address here"
+                <input type="text" placeholder="Business Address"
                     class="form-control px-3 py-2 text-white " id="business" aria-describedby="business"
                     style="background: none;">
             </div>
