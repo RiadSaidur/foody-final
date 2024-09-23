@@ -132,6 +132,10 @@
             .fs-54 {
                 font-size: 36px;
             }
+
+            .w-sm-100 {
+                width: 100%;
+            }
         }
 
         @media (max-width: 600px) {
@@ -161,7 +165,7 @@
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                    <ul class="navbar-nav mb-2 col-12 col-md-7 justify-content-end">
+                    <ul class="navbar-nav mb-2 col-12 col-md-7 justify-content-end align-items-md-center">
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="#">Home</a>
                         </li>
@@ -175,16 +179,16 @@
                             <a class="nav-link" href="#">Become a Hero</a>
                         </li>
                     </ul>
-                  <ul class="navbar-nav mb-2 col-12 col-md-5 justify-content-end">
+                  <ul class="navbar-nav mb-2 col-12 col-md-5 justify-content-end align-items-center">
                     <li class="nav-item">
                         <a class="nav-link btn mt-3 px-4 btn btn-primary bg-white text-highlight-hover" href="#">
                             <span class="text-highlight">Signup</span>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <span class="btn btn-primary px-4 py-2 w-100">Contact</span>
-                            <img src="./assets/arrow.png" alt="arrow" class="d-none d-lg-inline-block">
+                    <li class="nav-item p-0" style="margin-top: 12px;">
+                        <a class="nav-link py-0" href="#">
+                            <span class="btn btn-primary px-4 py-2 w-sm-100">Contact</span>
+                            <img src="./assets/arrow.png" alt="arrow" class="d-none d-lg-inline-block p-0 m-0" style="transform: translateX(-4px); height: 42px;">
                         </a>
                     </li>
                 </ul>
