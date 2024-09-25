@@ -18,182 +18,59 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <!-- CUSTOM CSS -->
-    <style>
-        body, html {
-            overflow-x: hidden;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        .text-highlight {
-            color: #e23744;
-        }
-
-        .text-highlight-hover:hover > span {
-            color: #2D2D2D;
-        }
-
-        .btn {
-            border-radius: 40px;
-        }
-
-        .btn:hover {
-            background-color: #2D2D2D;
-            border-color: #2D2D2D;
-        }
-
-        .btn-primary {
-            background-color: #e23744;
-            border: 1px solid #e23744;
-        }
-
-        .btn-secondary {
-            background-color: #FEFEFE;
-            color: #e23744;
-            border: none;
-        }
-
-        .nav-link {
-            color: #545454;
-            font-weight: bold;
-        }
-
-        .border-primary {
-            border-color: rgba(226, 55, 68, 0.3) !important;
-        }
-
-        .bg-primary {
-            background-color: #e23744 !important;
-        }
-
-        body {
-            overflow-x: hidden;
-        }
-
-        footer {
-            position: relative;
-        }
-
-        footer::before {
-            position: absolute;
-            content: "";
-            height: 1px;
-            width: 200vw;
-            border: 1px solid rgba(128, 128, 128, 0.1);
-            top: 0;
-            left: -50vw;
-        }
-
-        .m-60 {
-            margin: 60px;
-        }
-
-        .px-72 {
-            padding-left: 72px;
-            padding-right: 72px;
-        }
-
-        .fs-54 {
-            font-size: 54px;
-        }
-
-        .hover {
-            transition: all 0.3s ease-in-out;
-        }
-
-        .hover-bg-primary:hover {
-            background-color: #e23744;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .hover-text-white:hover {
-            color: white;
-        }
-
-        @media (min-width: 1160px) {
-            .w-1160 {
-                width: 1160px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            body {
-                padding: 0 1rem !important;
-            }
-
-            .px-72 {
-                padding-left: 32px;
-                padding-right: 32px;
-            }
-
-            .fs-54 {
-                font-size: 36px;
-            }
-
-            .w-sm-100 {
-                width: 100%;
-            }
-        }
-
-        @media (max-width: 600px) {
-            .m-60 {
-                margin: 0px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body class="d-flex flex-column m-auto" style="max-width: 1440px; padding: 0 2rem;">
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/">
                 <img src="./assets/footer-logo.png" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                    <img src="./assets/footer-logo.png" alt="logo">
-                  </h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                        <img src="./assets/footer-logo.png" alt="logo">
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav mb-2 col-12 col-md-7 justify-content-end align-items-md-center">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                            <a class="nav-link fw-normal" aria-current="page" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Featured</a>
+                            <a class="nav-link fw-normal" href="/contact.html">Featured</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Become a Hero</a>
+                            <a class="nav-link fw-normal" href="/partner.html">Sign Up Restaurant</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Become a Hero</a>
+                            <a class="nav-link fw-normal" href="/hero.html">Join as Driver</a>
                         </li>
                     </ul>
-                  <ul class="navbar-nav mb-2 col-12 col-md-5 justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link btn mt-3 px-4 btn btn-primary bg-white text-highlight-hover" href="#">
-                            <span class="text-highlight">Signup</span>
-                        </a>
-                    </li>
-                    <li class="nav-item p-0" style="margin-top: 14px;">
-                        <a class="nav-link py-0" href="#">
-                            <span class="btn btn-primary px-4 py-2 w-sm-100">Contact</span>
-                            <img src="./assets/arrow.png" alt="arrow" class="d-none d-lg-inline-block p-0 m-0" style="transform: translateX(-4px); height: 42px;">
-                        </a>
-                    </li>
-                </ul>
+                    <ul class="navbar-nav mb-2 col-12 col-md-5 justify-content-end">
+                        <li class="nav-item display-none">
+                            <a class="nav-link btn mt-3 px-4 btn btn-primary bg-white text-highlight-hover" href="#">
+                                <span class="text-highlight">Signup</span>
+                            </a>
+                        </li>
+                        <li class="nav-item p-0" style="margin-top: 14px;">
+                            <a class="nav-link py-0" href="#">
+                                <span class="btn btn-primary px-4 py-2 w-sm-100">Contact</span>
+                                <img src="./assets/arrow.png" alt="arrow" class="d-none d-lg-inline-block p-0 m-0"
+                                    style="transform: translateX(-4px); height: 42px;">
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-              </div>
+            </div>
         </div>
     </nav>
 
@@ -209,14 +86,11 @@
 
     <section id="info" class="my-5 text-center d-flex justify-content-center">
         <div style="max-width: 991px;">
-            <h2 class="mt-2 fw-bold" style="font-size: 24px;">
-                Excited? To become our partner and boost your revenue, <br>
-                complete the form below!
+            <h2 class="mt-2 fw-semibold" style="font-size: 24px;">
+                Partner with fuudy and Grow Your Restaurant
             </h2>
             <p class="mt-4">
-                We're craving the greatest things in life, like serving our customers the greatest food and updating the
-                shopping experience. Foodi is a rapidly growing company that manages to retain its appeal as a locally
-                focused service with a strong sense of community.
+                Join the fuudy platform and bring your unique township dishes to a wider audience. Sign up today and start serving customers across South Africa with our easy-to-use app.
             </p>
         </div>
     </section>
@@ -253,49 +127,56 @@
                         id="phone" aria-describedby="emailHelp" style="background: none;">
                 </div>
             </div>
-            <div class="mb-3">
-                <label for="business" class="form-label">Business Address <span class="text-highlight">*</span></label>
-                <input type="text" placeholder="Business Address"
-                    class="form-control px-3 py-2 text-white " id="business" aria-describedby="business"
-                    style="background: none;">
+            <div class="row">
+                <div class="mb-3 col-12 col-lg-6">
+                    <label for="business" class="form-label">Business Address <span class="text-highlight">*</span></label>
+                    <input type="text" placeholder="Business Address"
+                        class="form-control px-3 py-2 text-white " id="business" aria-describedby="business"
+                        style="background: none;">
+                </div>
+                <div class="mb-3 col-12 col-lg-6">
+                    <label for="formFile" class="form-label">Choose file</label>
+                    <input class="form-control" type="file" id="formFile">                  
+                </div>
             </div>
             <div class="text-center">
-                <button type="submit" class="btn btn-primary py-2 mt-3 fw-bold px-72"
+                <button type="submit" class="btn btn-primary py-2 mt-3 fw-semibold px-72"
                     style="width: fit-content;">Submit Message</button>
             </div>
         </form>
     </section>
 
     <section id="app" class="my-5 d-flex flex-column align-items-center">
-        <h2 class="fw-bold text-center" style="font-size: 48px;">App Download</h2>
+        <h2 class="fw-semibold text-center" style="font-size: 48px;">Sign Up Process</h2>
+        <p class="text-center mt-3">Follow these simple steps to get started</p>
         <div class="w-1160 mt-4">
             <div class="d-flex flex-column flex-lg-row gap-4 justify-content-center">
-                <div class="p-4 rounded d-flex justify-content-around w-100 gap-4 shadow-sm">
-                    <img src="./assets/icon-account.png" alt="icon-account.png" style="height: 61px;">
+                <div class="p-4 rounded w-100 shadow-sm">
+                    <img src="./assets/icon-account.png" alt="icon-account.png" style="width: 61px;">
                     <div class="w-100">
-                        <h5 class="fw-bold">Step 01</h5>
-                        <p>Sign Up Online</p>
+                        <h5 class="mt-5 fw-semibold">Create Your Account</h5>
+                        <p class="mt-5 pt-2">Sign up with your basic details, including your restaurant name, contact information, and location.</p>
                     </div>
                 </div>
-                <div class="p-4 rounded d-flex justify-content-around w-100 gap-4 shadow-sm">
-                    <img src="./assets/icon-headphone.png" alt="icon-headphone.png" style="height: 61px;">
+                <div class="p-4 rounded w-100 shadow-sm">
+                    <img src="./assets/icon-headphone.png" alt="icon-headphone.png" style="width: 61px;">
                     <div class="w-100">
-                        <h5 class="fw-bold">Step 02</h5>
-                        <p>We will contact</p>
+                        <h5 class="mt-5 fw-semibold">Set Up Your Menu</h5>
+                        <p class="mt-5 pt-2">Upload your menu and showcase your dishes with clear descriptions and mouth-watering photos.</p>
                     </div>
                 </div>
-                <div class="p-4 rounded d-flex justify-content-around w-100 gap-4 shadow-sm">
-                    <img src="./assets/icon-contract.png" alt="icon-contract.png" style="height: 61px;">
+                <div class="p-4 rounded w-100 shadow-sm">
+                    <img src="./assets/icon-contract.png" alt="icon-contract.png" style="width: 61px;">
                     <div class="w-100">
-                        <h5 class="fw-bold">Step 03</h5>
-                        <p>Sign the contract</p>
+                        <h5 class="mt-5 fw-semibold">Configure Delivery Options</h5>
+                        <p class="mt-4">Set your delivery hours and preferred delivery areas, so you can control how far and when your food reaches customers.</p>
                     </div>
                 </div>
-                <div class="p-4 rounded d-flex justify-content-around w-100 gap-4 shadow-sm">
-                    <img src="./assets/icon-live.png" alt="icon-live.png" style="height: 61px;">
+                <div class="p-4 rounded w-100 shadow-sm">
+                    <img src="./assets/icon-live.png" alt="icon-live.png" style="width: 61px;">
                     <div class="w-100">
-                        <h5 class="fw-bold">Step 04</h5>
-                        <p>Go on live</p>
+                        <h5 class="mt-5 fw-semibold">Go Live and Start Receiving Orders</h5>
+                        <p class="mt-4">Once everything is set up, your restaurant will be listed on fuudy! Customers can start placing orders, and you’ll manage them easily through the app.</p>
                     </div>
                 </div>
             </div>
@@ -303,35 +184,34 @@
     </section>
 
     <section id="join-us" class="my-5">
-        <h2 class="fw-bold text-center" style="font-size: 48px;">
+        <h2 class="fw-semibold text-center" style="font-size: 48px;">
             <span class="text-highlight">Advantage</span> of Joining Us
         </h2>
-        <p class="text-center mt-3">In publishing and graphic design, Lorem ipsum is a placeholder text commonly <br>
-             used to demonstrate the visual form of a document .</p>
+        <p class="text-center mt-3">Joining fuudy provides restaurants with a user-friendly platform to manage orders and <br> deliveries, backed by dedicated support and flexible operating options.</p>
         <div class="d-flex flex-column-reverse flex-lg-row my-5 gap-4">
             <div class="d-flex flex-column flex-lg-row gap-4">
                 <div class="d-flex flex-column gap-4">
                     <div class="border rounded border-primary p-4 bg-primary">
                         <img src="./assets/icon-bell.png" alt="icon-bell.png">
-                        <p class="fw-bold mt-4 text-white">Best Quality Food</p>
-                        <p class="text-white">Add a personal touch to your order. Customize ingredients, choose portion sizes, and make your meal truly yours.</p>
+                        <p class="fw-semibold mt-4 text-white">Easy to Use</p>
+                        <p class="text-white">fuudy’s platform is designed to be user-friendly, allowing you to manage your menu, orders, and deliveries with ease.</p>
                     </div>
                     <div class="border rounded border-primary p-4">
                         <img src="./assets/icon-support.png" alt="icon-support.png">
-                        <p class="fw-bold mt-4">Dedicated Support</p>
-                        <p>Add a personal touch to your order. Customize ingredients, choose portion sizes, and make your meal truly yours.</p>
+                        <p class="fw-semibold mt-4">Dedicated Support</p>
+                        <p>We’re here to help you succeed. Our dedicated support team is available to assist you whenever you need it, ensuring your business runs smoothly.</p>
                     </div>
                 </div>
                 <div class="d-flex flex-column gap-4 mt-4">
                     <div class="border rounded border-primary p-4">
                         <img src="./assets/icon-revenue.png" alt="icon-revenue.png">
-                        <p class="fw-bold mt-4">More Revenue</p>
-                        <p>Add a personal touch to your order. Customize ingredients, choose portion sizes, and make your meal truly yours.</p>
+                        <p class="fw-semibold mt-4">Flexibility</p>
+                        <p>Set your own hours and delivery areas. With fuudy, you have the flexibility to run your restaurant on your terms.</p>
                     </div>
                     <div class="border rounded border-primary p-4">
                         <img src="./assets/icon-flexibility.png" alt="icon-flexibility.png">
-                        <p class="fw-bold mt-4">Constant Flexibilty</p>
-                        <p>Add a personal touch to your order. Customize ingredients, choose portion sizes, and make your meal truly yours.</p>
+                        <p class="fw-semibold mt-4">More Revenue</p>
+                        <p>By partnering with fuudy, you tap into a new customer base, increasing your visibility and boosting your sales.</p>
                     </div>
                 </div>
             </div>
@@ -342,28 +222,28 @@
     </section>
 
     <section id="order" class="my-5">
-        <h2 class="text-center fw-bold" style="font-size: 48px;">How to order with <span class="text-highlight">Fuudy</span></h2>
-        <p class="text-center mt-4">In publishing and graphic design, Lorem ipsum is a placeholder text commonly <br> used to demonstrate the visual form of a document .</p>
+        <h2 class="text-center fw-semibold" style="font-size: 48px;">Ready to grow your business with <span class="text-highlight">Fuudy?</span></h2>
+        <p class="text-center mt-4">Start your journey today and become part of South Africa’s fastest-growing food delivery platform.</p>
         <div class="my-5">
             <div class="text-center row gap-4">
                 <div class="p-5 rounded shadow-sm d-flex flex-column align-items-center col-12 col-lg">
                     <img src="./assets/icon-restaurant.png" alt="icon-restaurant.png">
-                    <p class="fw-bold mt-4">Select Restaurant</p>
+                    <p class="fw-semibold mt-4">Select Restaurant</p>
                     <p>The customer chooses a nearby restaurant or shop and inputs a delivery address via the app or website.</p>
                 </div>
                 <div class="p-5 rounded shadow-sm d-flex flex-column align-items-center col-12 col-lg bg-primary text-white">
                     <img src="./assets/icon-tracking.png" alt="icon-tracking.png">
-                    <p class="fw-bold mt-4">Order Taking</p>
+                    <p class="fw-semibold mt-4">Order Taking</p>
                     <p>The restaurant or store uses the tablet that foodi provides to take orders, and they immediately begin preparing the order. </p>
                 </div>
                 <div class="p-5 rounded shadow-sm d-flex flex-column align-items-center col-12 col-lg">
                     <img src="./assets/icon-order-placing.png" alt="icon-order-placing.png">
-                    <p class="fw-bold mt-4">Order Placing</p>
+                    <p class="fw-semibold mt-4">Order Placing</p>
                     <p>Within 30 minutes of the order being placed, our rider shows up on time to pick it up and delivers it.</p>
                 </div>
                 <div class="p-5 rounded shadow-sm d-flex flex-column align-items-center col-12 col-lg">
                     <img src="./assets/icon-restaurant.png" alt="icon-restaurant.png">
-                    <p class="fw-bold mt-4">Payment</p>
+                    <p class="fw-semibold mt-4">Payment</p>
                     <p>Each month, Fuudy sends you money earned from your orders and gives you full performance data</p>
                 </div>
             </div>
@@ -371,35 +251,37 @@
     </section>
 
     <footer class="mt-5">
-        <div class="row mt-5 pt-5 mx-lg-5">
+        <div class="row mt-5 pt-5 mx-lg-4">
             <div class="col-12 col-lg-4">
                 <img src="./assets/footer-logo.png" alt="logo.png">
-                <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quos maiores,
-                    necessitatibus autem
-                    eveniet iure ipsum expedita libero perspiciatis nulla!</p>
+                <p class="mt-4">Fuudy brings South Africa's township <br>flavors to your doorstep.</p>
             </div>
-            <div class="col-12 col-lg-4">
-                <h4 class="text-highlight fw-bold">Our Office</h4>
-                <p class="mt-4">
-                    Main Rd, Petrusville, 8770, <br> South Africa
-                </p>
+            <div class="col-12 col-lg-4 d-flex justify-content-sm-center">
+                <div>
+                    <h4 class="text-highlight fw-semibold">Our Office</h4>
+                    <p class="mt-4 mt-md-5">
+                        Main Rd, Petrusville, 8770, <br> South Africa
+                    </p>
+                </div>
             </div>
-            <div class="col-12 col-lg-4">
-                <h4 class="text-highlight fw-bold">Get in Touch</h4>
-                <div class="mt-4">
-                    <div>
-                        <img src="./assets/telephone.png" alt="telephone.png">
-                        <span class="ms-2">+27536630108</span>
-                    </div>
-                    <div>
-                        <img src="./assets/mail.png" alt="mail.png">
-                        <span class="ms-2">joinfuudy@example.com</span>
+            <div class="col-12 col-lg-4 d-flex justify-content-sm-end">
+                <div>
+                    <h4 class="text-highlight fw-semibold">Get in Touch</h4>
+                    <div class="mt-4 mt-md-5">
+                        <div>
+                            <img src="./assets/telephone.png" alt="telephone.png">
+                            <span class="ms-2">+27536630108</span>
+                        </div>
+                        <div>
+                            <img src="./assets/mail.png" alt="mail.png">
+                            <span class="ms-2">joinfuudy@example.com</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="my-4">
-            <h5 class="text-center" style="font-size: 16px;">
+        <div class="mt-5 mb-3">
+            <h5 class="text-center fw-light" style="font-size: 16px;">
                 Copyright © 2022 Fuudy.
             </h5>
         </div>

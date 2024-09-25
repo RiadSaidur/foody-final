@@ -20,183 +20,72 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <!-- CUSTOM CSS -->
-    <style>
-        .text-highlight {
-            color: #e23744;
-        }
-
-        .text-highlight-hover:hover > span {
-            color: #2D2D2D;
-        }
-
-        .btn {
-            border-radius: 40px;
-        }
-
-        .btn:hover {
-            background-color: #2D2D2D;
-            border-color: #2D2D2D;
-        }
-
-        .btn-primary {
-            background-color: #e23744;
-            border: 1px solid #e23744;
-        }
-
-        .btn-secondary {
-            background-color: #FEFEFE;
-            color: #e23744;
-            border: none;
-        }
-
-        .nav-link {
-            color: #545454;
-            font-weight: bold;
-        }
-
-        body,
-        html {
-            overflow-x: hidden;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        footer {
-            position: relative;
-        }
-
-        footer::before {
-            position: absolute;
-            content: "";
-            height: 1px;
-            width: 200vw;
-            border: 1px solid rgba(128, 128, 128, 0.1);
-            top: 0;
-            left: -50vw;
-        }
-
-        .fs-60 {
-            font-size: 60px;
-        }
-
-        .fs-48 {
-            font-size: 48px;
-        }
-
-        .scroll-row {
-            overflow-x: auto;
-            scroll-behavior: smooth;
-        }
-
-        .scroll-row::-webkit-scrollbar-track {
-            background: none;
-            /* Removes the background of the scrollbar track */
-        }
-
-        .scroll-row::-webkit-scrollbar-thumb {
-            background-color: #888;
-            /* Color of the scrollbar thumb */
-            border-radius: 10px;
-            /* Rounded corners for the scrollbar thumb */
-            border: 2px solid transparent;
-            /* Optional: create a space around the thumb */
-        }
-
-        .scroll-row::-webkit-scrollbar-thumb:hover {
-            background-color: #555;
-            /* Darker color on hover */
-        }
-
-        /* Firefox */
-        .scroll-row {
-            scrollbar-color: #888 transparent;
-            /* Thumb color and track background color */
-        }
-
-
-
-
-        @media (max-width: 480px) {
-
-            .fs-60,
-            fs-48,
-            fs-38 {
-                font-size: 36px;
-            }
-
-            .px-75 {
-                padding: 0 0.75rem;
-            }
-
-            .w-sm-100 {
-                width: 100%;
-            }
-
-            body {
-                padding: 0 1rem !important;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body class="d-flex flex-column m-auto" style="max-width: 1440px; padding: 0 2rem;">
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/">
                 <img src="./assets/footer-logo.png" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                    <img src="./assets/footer-logo.png" alt="logo">
-                  </h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                        <img src="./assets/footer-logo.png" alt="logo">
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav mb-2 col-12 col-md-7 justify-content-end align-items-md-center">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                            <a class="nav-link fw-normal" aria-current="page" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Featured</a>
+                            <a class="nav-link fw-normal" href="/contact.html">Featured</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Become a Hero</a>
+                            <a class="nav-link fw-normal" href="/partner.html">Sign Up Restaurant</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Become a Hero</a>
+                            <a class="nav-link fw-normal" href="/hero.html">Join as Driver</a>
                         </li>
                     </ul>
-                  <ul class="navbar-nav mb-2 col-12 col-md-5 justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link btn mt-3 px-4 btn btn-primary bg-white text-highlight-hover" href="#">
-                            <span class="text-highlight">Signup</span>
-                        </a>
-                    </li>
-                    <li class="nav-item p-0" style="margin-top: 14px;">
-                        <a class="nav-link py-0" href="#">
-                            <span class="btn btn-primary px-4 py-2 w-sm-100">Contact</span>
-                            <img src="./assets/arrow.png" alt="arrow" class="d-none d-lg-inline-block p-0 m-0" style="transform: translateX(-4px); height: 42px;">
-                        </a>
-                    </li>
-                </ul>
+                    <ul class="navbar-nav mb-2 col-12 col-md-5 justify-content-end">
+                        <li class="nav-item display-none">
+                            <a class="nav-link btn mt-3 px-4 btn btn-primary bg-white text-highlight-hover" href="#">
+                                <span class="text-highlight">Signup</span>
+                            </a>
+                        </li>
+                        <li class="nav-item p-0" style="margin-top: 14px;">
+                            <a class="nav-link py-0" href="#">
+                                <span class="btn btn-primary px-4 py-2 w-sm-100">Contact</span>
+                                <img src="./assets/arrow.png" alt="arrow" class="d-none d-lg-inline-block p-0 m-0"
+                                    style="transform: translateX(-4px); height: 42px;">
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-              </div>
+            </div>
         </div>
     </nav>
 
-    <section id="hero" class="d-flex flex-column-reverse flex-md-row pb-5 pb-lg-0" style="background-color: #E23744;">
+    <section id="hero" class="d-flex flex-column-reverse flex-md-row pb-5 pb-lg-0 pt-4"
+        style="background-color: #E23744;">
         <div class="mx-3 mx-lg-5 m-auto text-white py-3">
-            <h1 class="fw-bold fs-60">
-                <span class="fw-bolder d-block">Discover Authentic Township Flavors</span>
+            <h1 class="fw-semibold fs-60">
+                <span class="fw-semibolder d-block">Discover Authentic Township Flavors</span>
                 <span>Delivered to You!</span>
             </h1>
             <p class="mt-4">
-                Explore the best local eateries from South Africa's vibrant townships. Experience fast delivery, easy ordering, and the richness of authentic cuisine with fuudy.
+                Explore the best local eateries from South Africa's vibrant townships. Experience fast delivery, easy
+                ordering, and the richness of authentic cuisine with fuudy.
             </p>
             <button class="btn btn-secondary mt-4 py-2 px-4 d-flex gap-2">
                 <span>
@@ -216,63 +105,72 @@
         <div class="col-12 col-md card flex-column flex-lg-row p-4 mt-5">
             <img src="./assets/forks.png" alt="forks" class="img-fluid">
             <div class="mt-3 mt-lg-0 card-body d-flex flex-column justify-content-between align-items-start py-0">
-                <h5 class="card-title fw-bold">Grow Your Business with fuudy</h5>
-                <p class="card-text">Join our platform and showcase your unique township dishes to a wider audience. List your restaurant today and start reaching more customers!</p>
-                <a href="#" class="btn btn-primary py-2 px-4">Become a Hero</a>
+                <h5 class="card-title fw-semibold">Grow Your Business with fuudy</h5>
+                <p class="card-text">Join our platform and showcase your unique township dishes to a wider audience.
+                    List your restaurant today and start reaching more customers!</p>
+                <a href="#" class="btn btn-primary py-2 px-4">Sign Up Your Restaurant</a>
             </div>
         </div>
 
         <div class="col-12 col-md card flex-column flex-lg-row p-4 mt-5">
             <img src="./assets/rider.png" alt="rider">
             <div class="mt-3 mt-lg-0 card-body d-flex flex-column justify-content-between align-items-start py-0">
-                <h5 class="card-title fw-bold">Drive with fuudy</h5>
-                <p class="card-text">Become a part of fuudy’s driver community and help deliver amazing meals to customers in your area. Earn while you explore the rich culinary landscape of our townships.</p>
-                <a href="#" class="btn btn-primary py-2 px-4">Become a Partner</a>
+                <h5 class="card-title fw-semibold">Drive with fuudy</h5>
+                <p class="card-text">Become a part of fuudy’s driver community and help deliver amazing meals to
+                    customers in your area. Earn while you explore the rich culinary landscape of our townships.</p>
+                <a href="#" class="btn btn-primary py-2 px-4">Join as a Driver</a>
             </div>
         </div>
     </section>
 
     <section id="cities" class="my-0 my-lg-5">
-        <h2 class="fw-bold mt-5 fs-48">Find us in these cities and many more!</h2>
-        <div class="d-flex flex-column flex-lg-row gap-2 justify-content-between align-items-center mt-5">
+        <h2 class="fw-semibold mt-5 fs-48">Find us in these cities and many more!</h2>
+        <p>Fuudy is proud to serve township eateries across South Africa! You can find us operating in</p>
+        <div class="d-flex flex-column flex-lg-row gap-4 justify-content-between align-items-center mt-5">
             <div style="position: relative;">
                 <img src="./assets/city.png" alt="city" class="img-fluid">
-                <div class="text-white fw-bold" style="position: absolute; bottom: 0; left: 1rem;">
+                <div style="position: absolute; top: 0; left: 0; height: 100%; width: 100%; background-color: rgba(0, 0, 0, 0.3);"></div>
+                <div class="text-white fw-semibold" style="position: absolute; bottom: 0; left: 1rem;">
                     <h3 style="font-size: 24px;">Johannesburg</h3>
                     <p>55 Restaurants</p>
                 </div>
             </div>
             <div style="position: relative;">
                 <img src="./assets/city.png" alt="city" class="img-fluid">
-                <div class="text-white fw-bold" style="position: absolute; bottom: 0; left: 1rem;">
+                <div style="position: absolute; top: 0; left: 0; height: 100%; width: 100%; background-color: rgba(0, 0, 0, 0.3);"></div>
+                <div class="text-white fw-semibold" style="position: absolute; bottom: 0; left: 1rem;">
                     <h3 style="font-size: 24px;">Soweto</h3>
                     <p>55 Restaurants</p>
                 </div>
             </div>
             <div style="position: relative;">
                 <img src="./assets/city.png" alt="city" class="img-fluid">
-                <div class="text-white fw-bold" style="position: absolute; bottom: 0; left: 1rem;">
+                <div style="position: absolute; top: 0; left: 0; height: 100%; width: 100%; background-color: rgba(0, 0, 0, 0.3);"></div>
+                <div class="text-white fw-semibold" style="position: absolute; bottom: 0; left: 1rem;">
                     <h3 style="font-size: 24px;">Pretoria</h3>
                     <p>55 Restaurants</p>
                 </div>
             </div>
             <div style="position: relative;">
                 <img src="./assets/city.png" alt="city" class="img-fluid">
-                <div class="text-white fw-bold" style="position: absolute; bottom: 0; left: 1rem;">
+                <div style="position: absolute; top: 0; left: 0; height: 100%; width: 100%; background-color: rgba(0, 0, 0, 0.3);"></div>
+                <div class="text-white fw-semibold" style="position: absolute; bottom: 0; left: 1rem;">
                     <h3 style="font-size: 24px;">Cape Town</h3>
                     <p>55 Restaurants</p>
                 </div>
             </div>
             <div style="position: relative;">
                 <img src="./assets/city.png" alt="city" class="img-fluid">
-                <div class="text-white fw-bold" style="position: absolute; bottom: 0; left: 1rem;">
+                <div style="position: absolute; top: 0; left: 0; height: 100%; width: 100%; background-color: rgba(0, 0, 0, 0.3);"></div>
+                <div class="text-white fw-semibold" style="position: absolute; bottom: 0; left: 1rem;">
                     <h3 style="font-size: 24px;">Durban</h3>
                     <p>55 Restaurants</p>
                 </div>
             </div>
             <div style="position: relative;">
                 <img src="./assets/city.png" alt="city" class="img-fluid">
-                <div class="text-white fw-bold" style="position: absolute; bottom: 0; left: 1rem;">
+                <div style="position: absolute; top: 0; left: 0; height: 100%; width: 100%; background-color: rgba(0, 0, 0, 0.3);"></div>
+                <div class="text-white fw-semibold" style="position: absolute; bottom: 0; left: 1rem;">
                     <h3 style="font-size: 24px;">Durban</h3>
                     <p>55 Restaurants</p>
                 </div>
@@ -283,9 +181,10 @@
     <section id="info" class="my-5 mx-lg-5">
         <div class="d-flex flex-column flex-lg-row gap-2 gap-lg-5">
             <div class="w-75 w-lg-50">
-                <p class="text-highlight fw-bold">WHAT WE DO</p>
-                <h2 class="fw-bold fs-48">
-                    What we <span class="text-highlight">do</span> to <span class="text-highlight">help</span> you
+                <p class="text-highlight fw-semibold">What fuudy is About</p>
+                <h2 class="fw-semibold fs-48">
+                    Order Local, Fast, and Easy <span class="text-highlight">do</span> to <span
+                        class="text-highlight">help</span> you
                 </h2>
             </div>
             <div class="align-self-center">
@@ -301,57 +200,57 @@
             <div class="p-5 d-flex flex-column align-items-center shadow-sm rounded">
                 <img src="./assets/order.png" alt="order">
                 <div class="text-center mt-4">
-                    <p class="fw-bold fs-4">Easy to Order</p>
-                    <p>You only need a few steps in ordering food</p>
+                    <p class="fw-semibold fs-4">Easy to Order</p>
+                    <p>fuudy makes it simple to explore and order from your favorite township eateries. Just a few taps
+                        and the flavors of South Africa are on their way to you.</p>
                 </div>
             </div>
             <div class="p-5 d-flex flex-column align-items-center shadow-sm rounded">
                 <img src="./assets/delivery.png" alt="delivery">
                 <div class="text-center mt-4">
-                    <p class="fw-bold fs-4">Fastest Delivery</p>
-                    <p>You only need a few steps in ordering food</p>
+                    <p class="fw-semibold fs-4">Fastest Delivery</p>
+                    <p>We understand the importance of quick service. fuudy ensures that your food is delivered fast and
+                        fresh, no matter where you are.</p>
                 </div>
             </div>
             <div class="p-5 d-flex flex-column align-items-center shadow-sm rounded">
                 <img src="./assets/quality.png" alt="quality">
                 <div class="text-center mt-4">
-                    <p class="fw-bold fs-4">Best Quality</p>
-                    <p>You only need a few steps in ordering food</p>
+                    <p class="fw-semibold fs-4">Support Local</p>
+                    <p>When you order with fuudy, you’re supporting local entrepreneurs and helping small township
+                        businesses grow.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="features" class="mx-lg-5 my-0 my-lg-5">
-        <h2 class="fw-bold text-center mt-lg-5 fs-48">Key Features</h2>
+        <h2 class="fw-semibold text-center mt-lg-5 fs-48">Key Features</h2>
         <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 mt-5">
             <div class="card p-3">
                 <img src="./assets/order-processing.png" class="card-img-top" alt="order-processing">
                 <div class="card-body">
-                    <h5 class="card-title fw-bold">Order Processing</h5>
+                    <h5 class="card-title fw-semibold">Explore Authentic Township Cuisine</h5>
                     <p class="card-text">
-                        Add a personal touch to your order. Customize ingredients, choose portion sizes, and make your
-                        meal truly yours.
+                        Discover local flavors and hidden gems in the townships right from your phone.
                     </p>
                 </div>
             </div>
             <div class="card p-3">
                 <img src="./assets/track-order.png" class="card-img-top" alt="track-order">
                 <div class="card-body">
-                    <h5 class="card-title fw-bold">Track Order</h5>
+                    <h5 class="card-title fw-semibold">Track Your Orders in Real-Time</h5>
                     <p class="card-text">
-                        Add a personal touch to your order. Customize ingredients, choose portion sizes, and make your
-                        meal truly yours.
+                        Know exactly when your meal will arrive with live order tracking.
                     </p>
                 </div>
             </div>
             <div class="card p-3">
                 <img src="./assets/review.png" class="card-img-top" alt="review">
                 <div class="card-body">
-                    <h5 class="card-title fw-bold">Reviews</h5>
+                    <h5 class="card-title fw-semibold">Customizable Meals</h5>
                     <p class="card-text">
-                        Add a personal touch to your order. Customize ingredients, choose portion sizes, and make your
-                        meal truly yours.
+                        Select, customize, and enjoy your favorite dishes just the way you like them.
                     </p>
                 </div>
             </div>
@@ -359,47 +258,47 @@
     </section>
 
     <section id="app" class="my-5">
-        <h2 class="fw-bold text-center mt-lg-5 pt-lg-5 fs-48">App Download</h2>
+        <h2 class="fw-semibold text-center mt-lg-5 fs-48">App Download</h2>
         <div class="mt-5 pt-5 mx-lg-5 d-flex flex-column flex-lg-row justify-content-between gap-3">
-            <div class="card flex-fill shadow-sm" style="position: relative; border: none;">
+            <div class="card flex-fill shadow-sm mt-5" style="position: relative; border: none;">
                 <div style="position: absolute; top: -40%; right: 1rem">
                     <img src="./assets/download.png" class="card-img-top img-fluid" alt="download.png">
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title fw-bold fs-38">1000</h5>
+                    <h5 class="card-title fw-semibold fs-38">1000</h5>
                     <p class="card-text">
                         App Downloads
                     </p>
                 </div>
             </div>
-            <div class="card flex-fill shadow-sm" style="position: relative; border: none;">
+            <div class="card flex-fill shadow-sm mt-5" style="position: relative; border: none;">
                 <div style="position: absolute; top: -40%; right: 1rem">
                     <img src="./assets/smily.png" class="card-img-top img-fluid" alt="smily.png">
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title fw-bold fs-38">1000</h5>
+                    <h5 class="card-title fw-semibold fs-38">1000</h5>
                     <p class="card-text">
                         Happy Clients
                     </p>
                 </div>
             </div>
-            <div class="card flex-fill shadow-sm" style="position: relative; border: none;">
+            <div class="card flex-fill shadow-sm mt-5" style="position: relative; border: none;">
                 <div style="position: absolute; top: -40%; right: 1rem">
                     <img src="./assets/accounts.png" class="card-img-top img-fluid" alt="accounts.png">
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title fw-bold fs-38">1000</h5>
+                    <h5 class="card-title fw-semibold fs-38">1000</h5>
                     <p class="card-text">
                         Active Accounts
                     </p>
                 </div>
             </div>
-            <div class="card flex-fill shadow-sm" style="position: relative; border: none;">
+            <div class="card flex-fill shadow-sm mt-5" style="position: relative; border: none;">
                 <div style="position: absolute; top: -40%; right: 1rem">
                     <img src="./assets/star.png" class="card-img-top img-fluid" alt="star.png">
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title fw-bold fs-38">1000</h5>
+                    <h5 class="card-title fw-semibold fs-38">1000</h5>
                     <p class="card-text">
                         Total App Stars
                     </p>
@@ -410,12 +309,12 @@
 
     <section id="store"
         class="mx-lg-5 my-lg-5 d-flex flex-column-reverse flex-lg-row justify-content-between align-items-center">
-        <div>
-            <p class="text-highlight fw-bold" style="font-size: 18px; margin-top: -72px;">DOWNLOAD APP</p>
-            <h2 class="fw-bold mt-3 fs-48">Get Started With <br> Today!</h2>
+        <div class="mt-md-5">
+            <p class="text-highlight fw-semibold" style="font-size: 18px; margin-top: -72px;">DOWNLOAD APP</p>
+            <h2 class="fw-semibold mt-3 fs-48">Download the app and start exploring today!</h2>
             <p class="mt-3" style="font-size: 18px;">
-                Discover food wherever and whenever and get your food <br>
-                delivered quickly.
+                Fuudy brings South Africa's township flavors to your doorstep. Whether you're a restaurant looking to
+                grow, a driver wanting to earn, or a food lover craving something local, fuudy is here for you.
             </p>
             <button class="btn btn-primary mt-3 px-5 py-3">
                 Get The App
@@ -435,7 +334,7 @@
     </section>
 
     <section id="clients" class="mx-lg-5 my-5">
-        <h2 class="fw-bold text-center" style="font-size: 48px;">Our Clients</h2>
+        <h2 class="fw-semibold text-center" style="font-size: 48px;">Our Clients</h2>
         <div class="d-flex flex-column flex-lg-row gap-4 mt-5">
             <div class="card p-4">
                 <img src="./assets/client.png" alt="client.png" class="card-img-top ms-3"
@@ -444,7 +343,7 @@
                     <p class="card-title">
                         “You made it so simple. My new site is so much faster and easier to work with than my old site.”
                     </p>
-                    <p class="card-text fw-bold mt-4">
+                    <p class="card-text fw-semibold mt-4">
                         Isabella Sanchez
                     </p>
                     <p class="card-text text-highlight" style="margin-top: -10px;">
@@ -459,7 +358,7 @@
                     <p class="card-title">
                         “You made it so simple. My new site is so much faster and easier to work with than my old site.”
                     </p>
-                    <p class="card-text fw-bold mt-4">
+                    <p class="card-text fw-semibold mt-4">
                         Isabella Sanchez
                     </p>
                     <p class="card-text text-highlight" style="margin-top: -10px;">
@@ -474,7 +373,7 @@
                     <p class="card-title">
                         “You made it so simple. My new site is so much faster and easier to work with than my old site.”
                     </p>
-                    <p class="card-text fw-bold mt-4">
+                    <p class="card-text fw-semibold mt-4">
                         Isabella Sanchez
                     </p>
                     <p class="card-text text-highlight" style="margin-top: -10px;">
@@ -486,35 +385,37 @@
     </section>
 
     <footer class="mt-5">
-        <div class="row mt-5 pt-5 mx-lg-5">
+        <div class="row mt-5 pt-5 mx-lg-4">
             <div class="col-12 col-lg-4">
                 <img src="./assets/footer-logo.png" alt="logo.png">
-                <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quos maiores,
-                    necessitatibus autem
-                    eveniet iure ipsum expedita libero perspiciatis nulla!</p>
+                <p class="mt-4">Fuudy brings South Africa's township <br>flavors to your doorstep.</p>
             </div>
-            <div class="col-12 col-lg-4">
-                <h4 class="text-highlight fw-bold">Our Office</h4>
-                <p class="mt-4">
-                    Main Rd, Petrusville, 8770, <br> South Africa
-                </p>
+            <div class="col-12 col-lg-4 d-flex justify-content-sm-center">
+                <div>
+                    <h4 class="text-highlight fw-semibold">Our Office</h4>
+                    <p class="mt-4 mt-md-5">
+                        Main Rd, Petrusville, 8770, <br> South Africa
+                    </p>
+                </div>
             </div>
-            <div class="col-12 col-lg-4">
-                <h4 class="text-highlight fw-bold">Get in Touch</h4>
-                <div class="mt-4">
-                    <div>
-                        <img src="./assets/telephone.png" alt="telephone.png">
-                        <span class="ms-2">+27536630108</span>
-                    </div>
-                    <div>
-                        <img src="./assets/mail.png" alt="mail.png">
-                        <span class="ms-2">joinfuudy@example.com</span>
+            <div class="col-12 col-lg-4 d-flex justify-content-sm-end">
+                <div>
+                    <h4 class="text-highlight fw-semibold">Get in Touch</h4>
+                    <div class="mt-4 mt-md-5">
+                        <div>
+                            <img src="./assets/telephone.png" alt="telephone.png">
+                            <span class="ms-2">+27536630108</span>
+                        </div>
+                        <div>
+                            <img src="./assets/mail.png" alt="mail.png">
+                            <span class="ms-2">joinfuudy@example.com</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="my-4">
-            <h5 class="text-center" style="font-size: 16px;">
+        <div class="mt-5 mb-3">
+            <h5 class="text-center fw-light" style="font-size: 16px;">
                 Copyright © 2022 Fuudy.
             </h5>
         </div>

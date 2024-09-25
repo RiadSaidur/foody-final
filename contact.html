@@ -18,186 +18,59 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <!-- CUSTOM CSS -->
-    <style>
-        body, html {
-            overflow-x: hidden;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        .text-highlight {
-            color: #e23744;
-        }
-
-        .text-highlight-hover:hover > span {
-            color: #2D2D2D;
-        }
-
-        .btn {
-            border-radius: 40px;
-        }
-
-        .btn:hover {
-            background-color: #2D2D2D;
-            border-color: #2D2D2D;
-        }
-
-        .btn-primary {
-            background-color: #e23744;
-            border: 1px solid #e23744;
-        }
-
-        .btn-secondary {
-            background-color: #FEFEFE;
-            color: #e23744;
-            border: none;
-        }
-
-        .nav-link {
-            color: #545454;
-            font-weight: bold;
-        }
-
-        .border-primary {
-            border-color: rgba(226, 55, 68, 0.3) !important;
-        }
-
-        .bg-primary {
-            background-color: #e23744 !important;
-        }
-
-        body {
-            overflow-x: hidden;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        footer {
-            position: relative;
-        }
-
-        footer::before {
-            position: absolute;
-            content: "";
-            height: 1px;
-            width: 200vw;
-            border: 1px solid rgba(128, 128, 128, 0.1);
-            top: 0;
-            left: -50vw;
-        }
-
-        .white-placeholder::placeholder {
-            color: white;
-        }
-
-        .fs-54 {
-            font-size: 54px;
-        }
-
-        .fs-48 {
-            font-size: 48px;
-        }
-        
-        .m-60 {
-            margin: 60px;
-        }
-
-        .px-72 {
-            padding-left: 72px;
-            padding-right: 72px;
-        }
-
-        .hover {
-            transition: all 0.3s ease-in-out;
-        }
-
-        .hover-bg-primary:hover {
-            background-color: #e23744;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .hover-text-white:hover {
-            color: white;
-        }
-
-        @media (max-width: 480px) {
-            body {
-                padding: 0 1rem !important;
-            }
-
-            .px-72 {
-                padding-left: 16px;
-                padding-right: 16px;
-            }
-
-            .fs-54, .fs-48 {
-                font-size: 36px;
-            }
-
-            .w-sm-100 {
-                width: 100%;
-            }
-        }
-
-        @media (max-width: 600px) {
-            .m-60 {
-                margin: 0px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body class="d-flex flex-column m-auto" style="max-width: 1440px; padding: 0 2rem;">
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/">
                 <img src="./assets/footer-logo.png" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                    <img src="./assets/footer-logo.png" alt="logo">
-                  </h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                        <img src="./assets/footer-logo.png" alt="logo">
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav mb-2 col-12 col-md-7 justify-content-end align-items-md-center">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                            <a class="nav-link fw-normal" aria-current="page" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Featured</a>
+                            <a class="nav-link fw-normal" href="/contact.html">Featured</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Become a Hero</a>
+                            <a class="nav-link fw-normal" href="/partner.html">Sign Up Restaurant</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Become a Hero</a>
+                            <a class="nav-link fw-normal" href="/hero.html">Join as Driver</a>
                         </li>
                     </ul>
-                  <ul class="navbar-nav mb-2 col-12 col-md-5 justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link btn mt-3 px-4 btn btn-primary bg-white text-highlight-hover" href="#">
-                            <span class="text-highlight">Signup</span>
-                        </a>
-                    </li>
-                    <li class="nav-item p-0" style="margin-top: 14px;">
-                        <a class="nav-link py-0" href="#">
-                            <span class="btn btn-primary px-4 py-2 w-sm-100">Contact</span>
-                            <img src="./assets/arrow.png" alt="arrow" class="d-none d-lg-inline-block p-0 m-0" style="transform: translateX(-4px); height: 42px;">
-                        </a>
-                    </li>
-                </ul>
+                    <ul class="navbar-nav mb-2 col-12 col-md-5 justify-content-end">
+                        <li class="nav-item display-none">
+                            <a class="nav-link btn mt-3 px-4 btn btn-primary bg-white text-highlight-hover" href="#">
+                                <span class="text-highlight">Signup</span>
+                            </a>
+                        </li>
+                        <li class="nav-item p-0" style="margin-top: 14px;">
+                            <a class="nav-link py-0" href="#">
+                                <span class="btn btn-primary px-4 py-2 w-sm-100">Contact</span>
+                                <img src="./assets/arrow.png" alt="arrow" class="d-none d-lg-inline-block p-0 m-0"
+                                    style="transform: translateX(-4px); height: 42px;">
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-              </div>
+            </div>
         </div>
     </nav>
 
@@ -205,19 +78,19 @@
         style="background: url('./assets/bg-contact.png') no-repeat center; height: 380px;">
         <div class="text-center">
             <div>
-                <p style="font-size: 24px;">Home &#8594; <span class="fw-bold">Contact</span></p>
+                <p style="font-size: 24px;">Home &#8594; <span class="fw-semibold">Contact</span></p>
             </div>
-            <h1 class="fw-bold fs-54">Contact Us</h1>
+            <h1 class="fw-semibold fs-54">Contact Us</h1>
         </div>
     </section>
 
     <section id="info" class="my-5 text-md-center text-sm-start d-flex justify-content-center">
         <div style="max-width: 991px;">
-            <p class="text-highlight fw-bold">Get in Touch</p>
-            <h2 class="mt-2 fw-bold fs-48">
+            <p class="text-highlight fw-semibold">Get in Touch</p>
+            <h2 class="mt-2 fw-semibold fs-48">
                 <span>Please Don't Hesitate to Contact Us</span>
                 <br>
-                <span class="text-highlight fw-bold">with Any Inquiries or Messages.</span>
+                <span class="text-highlight fw-semibold">with Any Inquiries or Messages.</span>
             </h2>
             <p class="mt-4">
                 It is a long established fact that a reader will be distracted by the readable content of a page when
@@ -249,7 +122,7 @@
     </section>
 
     <section id="appointment" class="my-5 rounded p-md-5 px-3 py-5 text-white m-60" style="background-color: #e23744;">
-        <h2 class="text-center fw-bold">Make an Appointment</h2>
+        <h2 class="text-center fw-semibold">Make an Appointment</h2>
         <form class="d-flex flex-column mt-5">
             <div class="row">
                 <div class="mb-3 col-12 col-lg-6">
@@ -272,42 +145,44 @@
                 </div>
             </div>
             <div class="text-center">
-                <button type="submit" class="btn btn-secondary py-2 mt-3 fw-bold px-72"
+                <button type="submit" class="btn btn-secondary py-2 mt-3 fw-semibold px-72"
                     style="width: fit-content;">Submit Message</button>
             </div>
         </form>
     </section>
 
     <footer class="mt-5">
-        <div class="row mt-5 pt-5 mx-lg-5">
+        <div class="row mt-5 pt-5 mx-lg-4">
             <div class="col-12 col-lg-4">
                 <img src="./assets/footer-logo.png" alt="logo.png">
-                <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quos maiores,
-                    necessitatibus autem
-                    eveniet iure ipsum expedita libero perspiciatis nulla!</p>
+                <p class="mt-4">Fuudy brings South Africa's township <br>flavors to your doorstep.</p>
             </div>
-            <div class="col-12 col-lg-4">
-                <h4 class="text-highlight fw-bold">Our Office</h4>
-                <p class="mt-4">
-                    Main Rd, Petrusville, 8770, <br> South Africa
-                </p>
+            <div class="col-12 col-lg-4 d-flex justify-content-sm-center">
+                <div>
+                    <h4 class="text-highlight fw-semibold">Our Office</h4>
+                    <p class="mt-4 mt-md-5">
+                        Main Rd, Petrusville, 8770, <br> South Africa
+                    </p>
+                </div>
             </div>
-            <div class="col-12 col-lg-4">
-                <h4 class="text-highlight fw-bold">Get in Touch</h4>
-                <div class="mt-4">
-                    <div>
-                        <img src="./assets/telephone.png" alt="telephone.png">
-                        <span class="ms-2">+27536630108</span>
-                    </div>
-                    <div>
-                        <img src="./assets/mail.png" alt="mail.png">
-                        <span class="ms-2">joinfuudy@example.com</span>
+            <div class="col-12 col-lg-4 d-flex justify-content-sm-end">
+                <div>
+                    <h4 class="text-highlight fw-semibold">Get in Touch</h4>
+                    <div class="mt-4 mt-md-5">
+                        <div>
+                            <img src="./assets/telephone.png" alt="telephone.png">
+                            <span class="ms-2">+27536630108</span>
+                        </div>
+                        <div>
+                            <img src="./assets/mail.png" alt="mail.png">
+                            <span class="ms-2">joinfuudy@example.com</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="my-4">
-            <h5 class="text-center" style="font-size: 16px;">
+        <div class="mt-5 mb-3">
+            <h5 class="text-center fw-light" style="font-size: 16px;">
                 Copyright © 2022 Fuudy.
             </h5>
         </div>

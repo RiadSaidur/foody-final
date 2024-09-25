@@ -18,168 +18,70 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <!-- CUSTOM CSS -->
-    <style>
-        .text-highlight {
-            color: #e23744;
-        }
-
-        .text-highlight-hover:hover > span {
-            color: #2D2D2D;
-        }
-
-        .btn {
-            border-radius: 40px;
-        }
-
-        .btn:hover {
-            background-color: #2D2D2D;
-            border-color: #2D2D2D;
-        }
-
-        .btn-primary {
-            background-color: #e23744;
-            border: 1px solid #e23744;
-        }
-
-        .btn-secondary {
-            background-color: #FEFEFE;
-            color: #e23744;
-            border: none;
-        }
-
-        .nav-link {
-            color: #545454;
-            font-weight: bold;
-        }
-
-        body, html {
-            overflow-x: hidden;
-        }
-
-        footer {
-            position: relative;
-        }
-
-        footer::before {
-            position: absolute;
-            content: "";
-            height: 1px;
-            width: 200vw;
-            border: 1px solid rgba(128, 128, 128, 0.1);
-            top: 0;
-            left: -50vw;
-        }
-
-        ul {
-            list-style: none;
-        }
-
-        .white-placeholder::placeholder {
-            color: white;
-        }
-
-        .bg-primary {
-            background-color: #e23744 !important;
-        }
-
-        .fs-60 {
-            font-size: 60px;
-        }
-
-        .fs-48 {
-            font-size: 48px;
-        }
-
-        .fs-38 {
-            font-size: 38px;
-        }
-
-        .px-72 {
-            padding-left: 72px;
-            padding-right: 72px;
-        }
-
-        @media (max-width: 480px) {
-            .fs-60, fs-48, fs-38 {
-                font-size: 36px;
-            }
-
-            .px-72 {
-                padding-left: 32px;
-                padding-right: 32px;
-            }
-
-            body {
-                padding: 0 1rem !important;
-            }
-
-            .w-sm-100 {
-               width: 100%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body class="d-flex flex-column m-auto" style="max-width: 1440px; padding: 0 2rem;">
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/">
                 <img src="./assets/footer-logo.png" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                    <img src="./assets/footer-logo.png" alt="logo">
-                  </h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                        <img src="./assets/footer-logo.png" alt="logo">
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav mb-2 col-12 col-md-7 justify-content-end align-items-md-center">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                            <a class="nav-link fw-normal" aria-current="page" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Featured</a>
+                            <a class="nav-link fw-normal" href="/contact.html">Featured</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Become a Hero</a>
+                            <a class="nav-link fw-normal" href="/partner.html">Sign Up Restaurant</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Become a Hero</a>
+                            <a class="nav-link fw-normal" href="/hero.html">Join as Driver</a>
                         </li>
                     </ul>
-                  <ul class="navbar-nav mb-2 col-12 col-md-5 justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link btn mt-3 px-4 btn btn-primary bg-white text-highlight-hover" href="#">
-                            <span class="text-highlight">Signup</span>
-                        </a>
-                    </li>
-                    <li class="nav-item p-0" style="margin-top: 14px;">
-                        <a class="nav-link py-0" href="#">
-                            <span class="btn btn-primary px-4 py-2 w-sm-100">Contact</span>
-                            <img src="./assets/arrow.png" alt="arrow" class="d-none d-lg-inline-block p-0 m-0" style="transform: translateX(-4px); height: 42px;">
-                        </a>
-                    </li>
-                </ul>
+                    <ul class="navbar-nav mb-2 col-12 col-md-5 justify-content-end">
+                        <li class="nav-item display-none">
+                            <a class="nav-link btn mt-3 px-4 btn btn-primary bg-white text-highlight-hover" href="#">
+                                <span class="text-highlight">Signup</span>
+                            </a>
+                        </li>
+                        <li class="nav-item p-0" style="margin-top: 14px;">
+                            <a class="nav-link py-0" href="#">
+                                <span class="btn btn-primary px-4 py-2 w-sm-100">Contact</span>
+                                <img src="./assets/arrow.png" alt="arrow" class="d-none d-lg-inline-block p-0 m-0"
+                                    style="transform: translateX(-4px); height: 42px;">
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-              </div>
+            </div>
         </div>
     </nav>
 
     <section id="hero" class="my-lg-5 d-flex flex-column-reverse flex-lg-row align-items-lg-center justify-content-between">
         <div class="align-self-start mt-lg-5 pt-lg-4">
-            <h1 class="fw-bold fs-60">
-                <span class="text-highlight">Sign up</span> today
-                <br>& Become a Member 
-                <br>of <span class="text-highlight">Fuudy Family</span>
+            <h1 class="fw-semibold fs-60">
+                <span>Become a </span>
+                <span class="text-highlight">driver hero</span>
+                <span>and <br>start <span class="text-highlight">earning</span> today</span>
             </h1>
-            <p class="mt-3">Our commitment is to provide you with a menu that not only satisfies your
-                taste buds but also contributes to your overall well-being.</p>
+            <p class="mt-3">Join the fuudy driver community and deliver local township meals to happy customers while earning money on a flexible schedule. Become a key part of our mission to promote local cuisine and support township businesses.</p>
             <div class="mt-3">
                 <a href="#" class="btn btn-primary bg-dark px-3 py-2 px-lg-5 py-lg-3" style="border: none;">
                     <span>DOWNLOAD NOW</span>
@@ -230,7 +132,7 @@
                     style="background: none;">
             </div>
             <div class="text-center">
-                <button type="submit" class="btn btn-secondary py-2 mt-3 fw-bold px-72"
+                <button type="submit" class="btn btn-secondary py-2 mt-3 fw-semibold px-72"
                     style="width: fit-content;">Submit Message</button>
             </div>
         </form>
@@ -238,7 +140,7 @@
 
     <section id="benefits" class="my-5">
         <div class="text-center">
-            <h2 class="fw-bold fs-48">Attractive benefits for you</h2>
+            <h2 class="fw-semibold fs-48">Attractive benefits for you</h2>
             <p class="mt-3">
                 In publishing and graphic design, Lorem ipsum is a placeholder 
                 text commonly used to demonstrate the visual form of a document .
@@ -246,14 +148,25 @@
         </div>
         <div class="d-flex flex-column flex-lg-row justify-content-between gap-4 my-5">
             <div class="d-flex flex-column align-items-center rounded shadow-sm p-5 gap-3">
-                <img src="./assets/icon-bonus.png" alt="icon-bonus.png">
-                <h3 class="fw-bold">Earning bonus & program</h3>
-                <p class="text-center">Additional earning opportunities with Quest Bonuses, New Rider Bonuses. And there are interesting rider tips and friends referral program.</p>
+                <img src="./assets/icon-bonus-1.png" alt="icon-bonus-1.png">
+                <h3 class="fw-semibold">Flexible Hours</h3>
+                <p class="text-center">Work on your own schedule. Whether you’re looking for part-time or full-time opportunities, fuudy allows you to drive when it suits you.</p>
             </div>
             <div class="d-flex flex-column align-items-center rounded shadow-sm p-5 gap-3">
-                <img src="./assets/icon-bonus-1.png" alt="icon-bonus-1.png">
-                <h3 class="fw-bold">Earning bonus & program</h3>
-                <p class="text-center">Additional earning opportunities with Quest Bonuses, New Rider Bonuses. And there are interesting rider tips and friends referral program.</p>
+                <img src="./assets/icon-bonus.png" alt="icon-bonus.png">
+                <h3 class="fw-semibold">Earn More with Every Delivery</h3>
+                <p class="text-center">Maximize your earnings by delivering from township eateries to customers across various locations. The more you deliver, the more you earn.</p>
+            </div>
+
+            <div class="d-flex flex-column align-items-center rounded shadow-sm p-5 gap-3">
+                <img src="./assets/icon-bonus.png" alt="icon-bonus.png">
+                <h3 class="fw-semibold text-center">Be Part of a Growing Community</h3>
+                <p class="text-center">As a fuudy driver, you’re not just delivering food; you’re helping township businesses grow and sharing local culinary heritage with customers.</p>
+            </div>
+            <div class="d-flex flex-column align-items-center rounded shadow-sm p-5 gap-3">
+                <img src="./assets/icon-bonus.png" alt="icon-bonus.png">
+                <h3 class="fw-semibold">Easy-to-Use Driver App</h3>
+                <p class="text-center">Our driver app is designed for smooth navigation and order tracking, so you can focus on delivering great service.</p>
             </div>
         </div>
     </section>
@@ -263,7 +176,7 @@
             <img src="./assets/new-rider.png" alt="new-rider.png" style="z-index: 2;">
             <h3 class="text-white mt-3 ms-5">
                 <span>New Riders Joining up to</span>
-                <span class="fw-bold fs-38">R.1750 Bonus</span>
+                <span class="fw-semibold fs-38">R.1750 Bonus</span>
             </h3>
             <div style="position: absolute; content: ' '; top: 0; left: 0; width: 100%; height: 18%; background-color: white;"></div>
         </div>
@@ -271,9 +184,9 @@
             <img src="./assets/fuddy-family.png" alt="fuddy-family.png" style="z-index: 2;">
             <h3 class="text-white mt-3 ms-5">
                 <span>Join</span>
-                <span class="fw-bold fs-38">Fuddy Family</span>
+                <span class="fw-semibold fs-38">Fuddy Family</span>
                 <span>& Start</span>
-                <span class="fw-bold fs-38">Earning</span>
+                <span class="fw-semibold fs-38">Earning</span>
             </h3>
             <div style="position: absolute; content: ' '; top: 0; left: 0; width: 100%; height: 18%; background-color: white;"></div>
         </div>
@@ -281,8 +194,7 @@
 
     <section id="apply" class="d-flex flex-column flex-lg-row mt-5 pt-5 justify-content-between align-items-center">
         <div>
-            <h3 class="fw-bold fs-38">What is required to apply</h3>
-            <p class="mt-3">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document.</p>
+            <h3 class="fw-semibold fs-38">What’s Required to Be a <span class="text-highlight">fuddy</span> Driver</h3>
             <ul class="lh-lg">
                 <li>
                     <img src="./assets/icon-bullet.png" alt="">
@@ -309,11 +221,10 @@
 
     <section id="store" class="mx-lg-5 my-lg-5 d-flex flex-column-reverse flex-lg-row justify-content-between align-items-center">
         <div>
-            <p class="text-highlight fw-bold" style="font-size: 18px; margin-top: -72px;">DOWNLOAD APP</p>
-            <h2 class="fw-bold mt-3 fs-48">Get Started With <br> Today!</h2>
+            <p class="text-highlight fw-semibold" style="font-size: 18px; margin-top: -72px;">DOWNLOAD APP</p>
+            <h2 class="fw-semibold mt-3 fs-48">Ready to start earning with fuddy?</h2>
             <p class="mt-3" style="font-size: 18px;">
-                Discover food wherever and whenever and get your food <br>
-                delivered quickly.
+                Sign up now and begin delivering meals while supporting local township businesses!
             </p>
             <button class="btn btn-primary mt-3 px-5 py-3">
                 Get The App
@@ -333,35 +244,37 @@
     </section>
 
     <footer class="mt-5">
-        <div class="row mt-5 pt-5 mx-lg-5">
+        <div class="row mt-5 pt-5 mx-lg-4">
             <div class="col-12 col-lg-4">
                 <img src="./assets/footer-logo.png" alt="logo.png">
-                <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quos maiores,
-                    necessitatibus autem
-                    eveniet iure ipsum expedita libero perspiciatis nulla!</p>
+                <p class="mt-4">Fuudy brings South Africa's township <br>flavors to your doorstep.</p>
             </div>
-            <div class="col-12 col-lg-4">
-                <h4 class="text-highlight fw-bold">Our Office</h4>
-                <p class="mt-4">
-                    Main Rd, Petrusville, 8770, <br> South Africa
-                </p>
+            <div class="col-12 col-lg-4 d-flex justify-content-sm-center">
+                <div>
+                    <h4 class="text-highlight fw-semibold">Our Office</h4>
+                    <p class="mt-4 mt-md-5">
+                        Main Rd, Petrusville, 8770, <br> South Africa
+                    </p>
+                </div>
             </div>
-            <div class="col-12 col-lg-4">
-                <h4 class="text-highlight fw-bold">Get in Touch</h4>
-                <div class="mt-4">
-                    <div>
-                        <img src="./assets/telephone.png" alt="telephone.png">
-                        <span class="ms-2">+27536630108</span>
-                    </div>
-                    <div>
-                        <img src="./assets/mail.png" alt="mail.png">
-                        <span class="ms-2">joinfuudy@example.com</span>
+            <div class="col-12 col-lg-4 d-flex justify-content-sm-end">
+                <div>
+                    <h4 class="text-highlight fw-semibold">Get in Touch</h4>
+                    <div class="mt-4 mt-md-5">
+                        <div>
+                            <img src="./assets/telephone.png" alt="telephone.png">
+                            <span class="ms-2">+27536630108</span>
+                        </div>
+                        <div>
+                            <img src="./assets/mail.png" alt="mail.png">
+                            <span class="ms-2">joinfuudy@example.com</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="my-4">
-            <h5 class="text-center" style="font-size: 16px;">
+        <div class="mt-5 mb-3">
+            <h5 class="text-center fw-light" style="font-size: 16px;">
                 Copyright © 2022 Fuudy.
             </h5>
         </div>
