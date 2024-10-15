@@ -1,3 +1,20 @@
+/* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+    background: none; /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #E23744; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+/* For Firefox */
+.scrollable-container {
+    scrollbar-width: thin; /* Set scrollbar to thin */
+    scrollbar-color: #E23744 transparent; /* Thumb color and track color */
+}
+
 textarea:focus,
 input[type="text"]:focus,
 input[type="password"]:focus,
