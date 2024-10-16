@@ -1,6 +1,6 @@
 /* For WebKit browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
-    width: 8px; /* Width of the scrollbar */
+    width: 6px; /* Width of the scrollbar */
     background: none; /* Background of the scrollbar track */
 }
 
@@ -387,6 +387,10 @@ footer::before {
 @media (max-width: 480px) {
     body {
         padding: 0 1rem !important;
+    }
+
+    #profile {
+        transform: translateY(60px);
     }
 
     .px-72 {
