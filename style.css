@@ -249,9 +249,9 @@ footer::before {
     color: white;
 }
 
-@media (min-width: 1160px) {
-    .w-1160 {
-        width: 1160px;
+@media (min-width: 1256px) {
+    .w-1256 {
+        width: 1256px;
     }
 }
 
