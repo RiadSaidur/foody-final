@@ -74,7 +74,7 @@
         </div>
     </nav>
 
-    <section id="hero" class="mb-5 text-white d-flex align-items-center justify-content-center"
+    <section id="hero" class="mb-5d-flex align-items-center justify-content-center"
         style="background: url('./assets/bg-contact.png') no-repeat center; height: 380px;">
         <div class="text-center">
             <div>
@@ -99,39 +99,63 @@
         <form class="d-flex flex-column">
             <div class="mb-3">
                 <label for="outlet" class="form-label">Outlet Name <span class="text-highlight">*</span></label>
-                <input type="text" placeholder="Outlet Name" class="form-control px-3 py-2 text-white "
+                <input type="text" placeholder="Outlet Name" class="form-control px-3 py-2"
                     id="outlet" aria-describedby="outlet" style="background: none;">
             </div>
             <div class="row">
                 <div class="mb-3 col-12 col-lg-6">
                     <label for="firstName" class="form-label">First Name <span class="text-highlight">*</span></label>
                     <input type="text" placeholder="First Name"
-                        class="form-control px-3 py-2 text-white " id="firstName" aria-describedby="firstName"
+                        class="form-control px-3 py-2" id="firstName" aria-describedby="firstName"
                         style="background: none;">
                 </div>
                 <div class="mb-3 col-12 col-lg-6">
                     <label for="lastName" class="form-label">Last Name <span class="text-highlight">*</span></label>
-                    <input type="text" placeholder="Last Name" class="form-control px-3 py-2 text-white "
+                    <input type="text" placeholder="Last Name" class="form-control px-3 py-2"
                         id="lastName" aria-describedby="lastName" style="background: none;">
                 </div>
             </div>
             <div class="row">
                 <div class="mb-3 col-12 col-lg-6">
                     <label for="email" class="form-label">Email Address <span class="text-highlight">*</span></label>
-                    <input type="email" placeholder="Email" class="form-control px-3 py-2 text-white "
+                    <input type="email" placeholder="Email" class="form-control px-3 py-2"
                         id="email" aria-describedby="emailHelp" style="background: none;">
                 </div>
                 <div class="mb-3 col-12 col-lg-6">
                     <label for="phone" class="form-label">Phone no <span class="text-highlight">*</span></label>
-                    <input type="text" placeholder="Phone" class="form-control px-3 py-2 text-white "
+                    <input type="text" placeholder="Phone" class="form-control px-3 py-2"
                         id="phone" aria-describedby="emailHelp" style="background: none;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="mb-3 col-12 col-lg-6">
+                    <label for="province" class="form-label">Province <span
+                            class="text-white">*</span></label>
+                    <input id="province" type="text" name="province" list="provincename"
+                        class="form-control px-3 py-2" style="background: none;">
+                    <datalist id="provincename">
+                        <!-- CREATE DYNAMIC OPTIONS FOR AUTO SUGGESTION -->
+                        <option value="Gauteng">
+                        <option value="Limpopo">
+                    </datalist>
+                </div>
+                <div class="mb-3 col-12 col-lg-6">
+                    <label for="city" class="form-label">City <span class="text-white">*</span></label>
+                    <input id="city" type="text" name="city" list="cityname"
+                        class="form-control px-3 py-2" style="background: none;">
+                    <datalist id="cityname">
+                        <!-- CREATE DYNAMIC OPTIONS FOR AUTO SUGGESTION -->
+                        <option value="Johannesburg">
+                        <option value="Cape Town">
+                        <option value="Durban">
+                    </datalist>
                 </div>
             </div>
             <div class="row">
                 <div class="mb-3 col-12 col-lg-6">
                     <label for="business" class="form-label">Business Address <span class="text-highlight">*</span></label>
                     <input type="text" placeholder="Business Address"
-                        class="form-control px-3 py-2 text-white " id="business" aria-describedby="business"
+                        class="form-control px-3 py-2" id="business" aria-describedby="business"
                         style="background: none;">
                 </div>
                 <div class="mb-3 col-12 col-lg-6">

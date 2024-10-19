@@ -129,6 +129,30 @@
                         id="phone" aria-describedby="emailHelp" style="background: none;">
                 </div>
             </div>
+            <div class="row">
+                <div class="mb-3 col-12 col-lg-6">
+                    <label for="province" class="form-label text-white">Province <span
+                            class="text-white">*</span></label>
+                    <input id="province" type="text" name="province" list="provincename"
+                        class="form-control px-3 py-2 text-white white-placeholder" style="background: none;">
+                    <datalist id="provincename">
+                        <!-- CREATE DYNAMIC OPTIONS FOR AUTO SUGGESTION -->
+                        <option value="Gauteng">
+                        <option value="Limpopo">
+                    </datalist>
+                </div>
+                <div class="mb-3 col-12 col-lg-6">
+                    <label for="city" class="form-label text-white">City <span class="text-white">*</span></label>
+                    <input id="city" type="text" name="city" list="cityname"
+                        class="form-control px-3 py-2 text-white white-placeholder" style="background: none;">
+                    <datalist id="cityname">
+                        <!-- CREATE DYNAMIC OPTIONS FOR AUTO SUGGESTION -->
+                        <option value="Johannesburg">
+                        <option value="Cape Town">
+                        <option value="Durban">
+                    </datalist>
+                </div>
+            </div>
             <div class="mb-3">
                 <label for="business" class="form-label text-white">Address <span class="text-white">*</span></label>
                 <input type="text" placeholder="Address" class="form-control px-3 py-2 text-white white-placeholder"
@@ -165,23 +189,27 @@
             <div class="d-flex flex-column align-items-center rounded shadow-sm p-5 gap-3" style="flex: 1">
                 <img src="./assets/icon-bonus-1.png" alt="icon-bonus-1.png">
                 <h3 style="flex: 1;" class="fw-semibold">Flexible Working Hours</h3>
-                <p style="flex: 1;" class="text-center">Set your own schedule and work when it suits you, whether part-time or full-time.</p>
+                <p style="flex: 1;" class="text-center">Set your own schedule and work when it suits you, whether
+                    part-time or full-time.</p>
             </div>
             <div class="d-flex flex-column align-items-center rounded shadow-sm p-5 gap-3" style="flex: 1">
                 <img src="./assets/icon-bonus-2.png" alt="icon-bonus.png">
                 <h3 style="flex: 1;" class="fw-semibold">Start Earning Everyday</h3>
-                <p style="flex: 1;" class="text-center mt-5">Earn R10 or more with each delivery and boost your income by taking multiple orders during peak times. Determine your income!</p>
+                <p style="flex: 1;" class="text-center mt-5">Earn R10 or more with each delivery and boost your income
+                    by taking multiple orders during peak times. Determine your income!</p>
             </div>
 
             <div class="d-flex flex-column align-items-center rounded shadow-sm p-5 gap-3" style="flex: 1">
                 <img src="./assets/icon-bonus-3.png" alt="icon-bonus.png">
                 <h3 style="flex: 1;" class="fw-semibold text-center">Join the township food economy</h3>
-                <p style="flex: 1;" class="text-center">Be part of a mission-driven team supporting township businesses and promoting local cuisine.</p>
+                <p style="flex: 1;" class="text-center">Be part of a mission-driven team supporting township businesses
+                    and promoting local cuisine.</p>
             </div>
             <div class="d-flex flex-column align-items-center rounded shadow-sm p-5 gap-3" style="flex: 1">
                 <img src="./assets/icon-bonus-4.png" alt="icon-bonus.png">
                 <h3 style="flex: 1;" class="fw-semibold mt-3">Easy-to-Use Driver App</h3>
-                <p style="flex: 1;" class="text-center">Navigate orders and track deliveries seamlessly with fuudy’s user-friendly app.</p>
+                <p style="flex: 1;" class="text-center">Navigate orders and track deliveries seamlessly with fuudy’s
+                    user-friendly app.</p>
             </div>
         </div>
     </section>
@@ -211,7 +239,8 @@
         </div>
     </section>
 
-    <section id="apply" class="d-flex flex-column flex-lg-row gap-5 mt-5 pt-5 justify-content-between align-items-center">
+    <section id="apply"
+        class="d-flex flex-column flex-lg-row gap-5 mt-5 pt-5 justify-content-between align-items-center">
         <div>
             <h3 class="fw-semibold fs-38">What’s Required to Be a <span class="text-highlight">fuddy</span> Driver</h3>
             <ul class="lh-lg">
