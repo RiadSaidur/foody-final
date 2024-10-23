@@ -21,13 +21,15 @@
         crossorigin="anonymous"></script>
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- CUSTOM JS -->
+    <script src="./script.js"></script>
     <title>Fuudy</title>
 </head>
 
 <body class="d-flex flex-column m-auto" style="max-width: 1440px; padding: 0 2rem;">
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/">
+            <a class="navbar-brand" href="./">
                 <img src="./assets/footer-logo.png" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
@@ -48,7 +50,7 @@
                             <a class="nav-link fw-normal" aria-current="page" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-normal" href="./contact.html">Featured</a>
+                            <a class="nav-link fw-normal" href="./#features">Featured</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link fw-normal" href="./partner.html">Sign Up Restaurant</a>
@@ -64,10 +66,16 @@
                             </a>
                         </li>
                         <li class="nav-item p-0" style="margin-top: 14px;">
-                            <a class="nav-link py-0" href="#">
-                                <span class="btn btn-primary px-4 py-2 w-sm-100">Contact</span>
-                                <img src="./assets/arrow.png" alt="arrow" class="d-none d-lg-inline-block p-0 m-0"
-                                    style="transform: translateX(-4px); height: 42px;">
+                            <a class="nav-link py-0" href="./contact.html">
+                                <span class="btn btn-primary px-4 py-2 w-sm-100" id="contact">Contact</span>
+                                <svg width="55" height="54" viewBox="0 0 55 54" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    style="scale: 0.8; transform: translateX(-11px);">
+                                    <circle id="circle" cx="27.2354" cy="27" r="26.5" fill="#E23744" stroke="#FEFEFE" />
+                                    <path
+                                        d="M34.2354 20C34.2354 19.4477 33.7876 19 33.2354 19L24.2354 19C23.6831 19 23.2354 19.4477 23.2354 20C23.2354 20.5523 23.6831 21 24.2354 21L32.2354 21L32.2354 29C32.2354 29.5523 32.6831 30 33.2354 30C33.7876 30 34.2354 29.5523 34.2354 29L34.2354 20ZM20.9425 33.7071L33.9425 20.7071L32.5282 19.2929L19.5282 32.2929L20.9425 33.7071Z"
+                                        fill="#FEFEFE" />
+                                </svg>
                             </a>
                         </li>
                     </ul>
@@ -76,8 +84,7 @@
         </div>
     </nav>
 
-    <section id="hero" class="d-flex flex-column-reverse flex-md-row pb-5 pt-4"
-        style="background-color: #E23744;">
+    <section id="hero" class="d-flex flex-column-reverse flex-md-row pt-4" style="background-color: #E23744;">
         <div class="mx-3 mx-lg-5 m-auto text-white py-3">
             <h1 class="fw-semibold fs-60">
                 <span class="fw-semibolder d-block">Discover Authentic Township Flavors</span>
@@ -87,7 +94,8 @@
                 Explore the best local eateries from South Africa's vibrant townships. Experience fast delivery, easy
                 ordering, and the richness of authentic cuisine with fuudy.
             </p>
-            <button class="btn btn-secondary mt-5 px-5 py-3 d-flex gap-2">
+            <button class="btn btn-secondary mt-5 px-5 py-3 d-flex gap-2" type="button" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
                 <span>
                     DOWNLOAD APP
                 </span>
@@ -96,14 +104,14 @@
                 </div>
             </button>
         </div>
-        <div>
-            <img src="./assets/hero-demo-iphone.png" alt="demo" class="img-fluid w-100 w-sm-50">
+        <div class="w-100 align-self-end">
+            <img src="./assets/hero-demo-iphone.png" alt="demo" class="img-fluid w-100">
         </div>
     </section>
 
     <section id="cta" class="d-flex gap-3 row my-0 my-lg-5 pt-0 pt-lg-5 px-75">
-        <div class="col-12 col-md card flex-column flex-lg-row p-4 mt-5">
-            <img src="./assets/forks.png" alt="forks" class="img-fluid">
+        <div class="col-12 col-md card flex-column flex-lg-row align-items-center p-4 mt-5">
+            <img src="./assets/forks.svg" alt="forks" class="h-100">
             <div class="mt-3 mt-lg-0 card-body d-flex flex-column justify-content-between align-items-start py-0">
                 <h5 class="card-title fw-semibold">Grow Your Business with fuudy</h5>
                 <p class="card-text">Join our platform and showcase your unique township dishes to a wider audience.
@@ -113,7 +121,7 @@
         </div>
 
         <div class="col-12 col-md card flex-column flex-lg-row p-4 mt-5">
-            <img src="./assets/rider.png" alt="rider">
+            <img src="./assets/rider.svg" alt="rider" class="h-100">
             <div class="mt-3 mt-lg-0 card-body d-flex flex-column justify-content-between align-items-start py-0">
                 <h5 class="card-title fw-semibold">Drive with fuudy</h5>
                 <p class="card-text">Become a part of fuudy’s driver community and help deliver amazing meals to
@@ -126,7 +134,8 @@
     <section id="cities" class="my-0 my-lg-5">
         <h2 class="fw-semibold mt-5 fs-48">Find us in these cities and many more!</h2>
         <p>Fuudy is proud to serve township eateries across South Africa! You can find us operating in</p>
-        <div style="overflow-x: auto; white-space: nowrap; max-width: 100%; padding-right: 2rem; padding-bottom: 1rem; scrollbar-width: thin; scrollbar-color: #E23744 transparent;">
+        <div
+            style="overflow-x: auto; white-space: nowrap; max-width: 100%; padding-right: 2rem; padding-bottom: 1rem; scrollbar-width: thin; scrollbar-color: #E23744 transparent;">
             <div style="display: inline-block; min-width: 200px; margin-right: 16px; position: relative;">
                 <img src="./assets/city.png" alt="Johannesburg" style="height:350px; border-radius: 0.5rem;">
                 <div style="
@@ -369,20 +378,21 @@
                 Fuudy brings South Africa's township flavors to your doorstep. Whether you're a restaurant looking to
                 grow, a driver wanting to earn, or a food lover craving something local, fuudy is here for you.
             </p>
-            <button class="btn btn-primary mt-3 px-5 py-3">
+            <button class="btn btn-primary mt-3 px-5 py-3" type="button" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
                 Get The App
             </button>
-            <div class="mt-5 d-flex flex-column flex-md-row" style="margin-left: -18px;">
-                <a href="#">
-                    <img src="./assets/play-store.png" alt="play-store.png">
+            <div class="mt-5 d-flex flex-column flex-md-row" style="margin-left: -18px;" <a href="#" type="button"
+                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img src="./assets/play-store.png" alt="play-store.png">
                 </a>
-                <a href="#">
+                <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <img src="./assets/app-store.png" alt="app-store.png">
                 </a>
             </div>
         </div>
-        <div>
-            <img src="./assets/cta-iphone.png" alt="cta-iphone.png" class="img-fluid w-75 w-lg-100">
+        <div class="w-100">
+            <img src="./assets/cta-iphone.png" alt="cta-iphone.png" class="img-fluid">
         </div>
     </section>
 
@@ -390,11 +400,13 @@
         <h2 class="fw-semibold text-center" style="font-size: 48px;">Our Clients</h2>
         <div class="d-flex flex-column flex-lg-row gap-4 mt-5">
             <div class="card p-4" style="flex: 1">
-                <img src="./assets/client-1.png" alt="client.png" class="card-img-top ms-3"
+                <img src="./assets/client-2.png" alt="client.png" class="card-img-top ms-3"
                     style="height: 57px; width: 57px;">
                 <div class="card-body">
                     <p class="card-title" style="height: 75%;">
-                        “Working for Fuudy as a rider has been a positive experience overall. The app is user-friendly, and the delivery routes are well-planned, which helps me stay efficient. However, the pay could be a bit higher, especially during non-peak hours.”
+                        “Working for Fuudy as a rider has been a positive experience overall. The app is user-friendly,
+                        and the delivery routes are well-planned, which helps me stay efficient. However, the pay could
+                        be a bit higher, especially during non-peak hours.”
                     </p>
                     <p class="card-text fw-semibold mt-4">
                         Thabo Mokoena
@@ -405,11 +417,12 @@
                 </div>
             </div>
             <div class="card p-4" style="flex: 1">
-                <img src="./assets/client-2.png" alt="client.png" class="card-img-top ms-3"
+                <img src="./assets/client-1.png" alt="client.png" class="card-img-top ms-3"
                     style="height: 57px; width: 57px;">
                 <div class="card-body">
                     <p class="card-title" style="height: 75%;">
-                        “Working for Fuudy has been a pretty rewarding experience overall. I enjoy the freedom to set my own schedule, which lets me balance work with my personal life.”
+                        “Working for Fuudy has been a pretty rewarding experience overall. I enjoy the freedom to set my
+                        own schedule, which lets me balance work with my personal life.”
                     </p>
                     <p class="card-text fw-semibold mt-4">
                         Zanele Khumalo
@@ -424,7 +437,8 @@
                     style="height: 57px; width: 57px;">
                 <div class="card-body">
                     <p class="card-title" style="height: 75%;">
-                        “Being a rider for Fuudy has been a unique experience, giving me the chance to work independently and on my own terms.”
+                        “Being a rider for Fuudy has been a unique experience, giving me the chance to work
+                        independently and on my own terms.”
                     </p>
                     <p class="card-text fw-semibold mt-4">
                         Sipho Dlamini
@@ -473,6 +487,15 @@
             </h5>
         </div>
     </footer>
+    <div class="modal fade flex" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog top-50 left-50">
+            <div class="modal-content">
+                <div class="modal-body">
+                    App Coming Soon
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

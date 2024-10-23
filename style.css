@@ -1,18 +1,24 @@
 /* For WebKit browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
-    width: 6px; /* Width of the scrollbar */
-    background: none; /* Background of the scrollbar track */
+    width: 6px;
+    /* Width of the scrollbar */
+    background: none;
+    /* Background of the scrollbar track */
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #E23744; /* Color of the scrollbar thumb */
-    border-radius: 10px; /* Rounded corners for the thumb */
+    background-color: #E23744;
+    /* Color of the scrollbar thumb */
+    border-radius: 10px;
+    /* Rounded corners for the thumb */
 }
 
 /* For Firefox */
 .scrollable-container {
-    scrollbar-width: thin; /* Set scrollbar to thin */
-    scrollbar-color: #E23744 transparent; /* Thumb color and track color */
+    scrollbar-width: thin;
+    /* Set scrollbar to thin */
+    scrollbar-color: #E23744 transparent;
+    /* Thumb color and track color */
 }
 
 textarea:focus,
@@ -30,13 +36,14 @@ input[type="url"]:focus,
 input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus,
-.uneditable-input:focus {   
-  border-color: #b81d2a;
-  box-shadow: 0 1px 1px rgba(94, 94, 94, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);
-  outline: 0 none;
+.uneditable-input:focus {
+    border-color: #b81d2a;
+    box-shadow: 0 1px 1px rgba(94, 94, 94, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);
+    outline: 0 none;
 }
 
-body, html {
+body,
+html {
     overflow-x: hidden;
 }
 
@@ -159,6 +166,13 @@ footer::before {
     }
 }
 
+@media (max-width: 1201px) {
+
+    .fs-60 {
+        font-size: 50px !important;
+    }
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -168,7 +182,7 @@ a {
     color: #e23744;
 }
 
-.text-highlight-hover:hover > span {
+.text-highlight-hover:hover>span {
     color: #2D2D2D;
 }
 
@@ -278,7 +292,7 @@ footer::before {
     .w-sm-100 {
         width: 100% !important;
     }
-    
+
     .m-60 {
         margin: 0px;
     }
@@ -290,7 +304,8 @@ footer::before {
     }
 }
 
-body, html {
+body,
+html {
     overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
 }
@@ -304,7 +319,7 @@ a {
     color: #e23744;
 }
 
-.text-highlight-hover:hover > span {
+.text-highlight-hover:hover>span {
     color: #2D2D2D;
 }
 
@@ -408,7 +423,8 @@ footer::before {
         padding-right: 16px;
     }
 
-    .fs-54, .fs-48 {
+    .fs-54,
+    .fs-48 {
         font-size: 36px;
     }
 
@@ -427,7 +443,7 @@ footer::before {
     color: #e23744;
 }
 
-.text-highlight-hover:hover > span {
+.text-highlight-hover:hover>span {
     color: #2D2D2D;
 }
 
@@ -456,7 +472,8 @@ footer::before {
     font-weight: bold;
 }
 
-body, html {
+body,
+html {
     overflow-x: hidden;
 }
 
@@ -504,7 +521,10 @@ ul {
 }
 
 @media (max-width: 480px) {
-    .fs-60, fs-48, fs-38 {
+
+    .fs-60,
+    fs-48,
+    fs-38 {
         font-size: 36px;
     }
 
@@ -518,6 +538,17 @@ ul {
     }
 
     .w-sm-100 {
-       width: 100%;
+        width: 100%;
+    }
+}
+
+.circle {
+    fill: #2D2D2D;
+    transition: all 0.5;
+}
+
+@media (max-width: 991px) {
+    #circle {
+        display: none;
     }
 }

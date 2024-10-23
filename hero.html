@@ -21,13 +21,15 @@
         crossorigin="anonymous"></script>
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- CUSTOM JS -->
+    <script src="./script.js"></script>
     <title>Fuudy - Hero</title>
 </head>
 
 <body class="d-flex flex-column m-auto" style="max-width: 1440px; padding: 0 2rem;">
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/">
+            <a class="navbar-brand" href="./">
                 <img src="./assets/footer-logo.png" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
@@ -48,7 +50,7 @@
                             <a class="nav-link fw-normal" aria-current="page" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-normal" href="./contact.html">Featured</a>
+                            <a class="nav-link fw-normal" href="./#features">Featured</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link fw-normal" href="./partner.html">Sign Up Restaurant</a>
@@ -64,10 +66,16 @@
                             </a>
                         </li>
                         <li class="nav-item p-0" style="margin-top: 14px;">
-                            <a class="nav-link py-0" href="#">
-                                <span class="btn btn-primary px-4 py-2 w-sm-100">Contact</span>
-                                <img src="./assets/arrow.png" alt="arrow" class="d-none d-lg-inline-block p-0 m-0"
-                                    style="transform: translateX(-4px); height: 42px;">
+                            <a class="nav-link py-0" href="./contact.html">
+                                <span class="btn btn-primary px-4 py-2 w-sm-100" id="contact">Contact</span>
+                                <svg width="55" height="54" viewBox="0 0 55 54" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    style="scale: 0.8; transform: translateX(-11px);">
+                                    <circle id="circle" cx="27.2354" cy="27" r="26.5" fill="#E23744" stroke="#FEFEFE" />
+                                    <path
+                                        d="M34.2354 20C34.2354 19.4477 33.7876 19 33.2354 19L24.2354 19C23.6831 19 23.2354 19.4477 23.2354 20C23.2354 20.5523 23.6831 21 24.2354 21L32.2354 21L32.2354 29C32.2354 29.5523 32.6831 30 33.2354 30C33.7876 30 34.2354 29.5523 34.2354 29L34.2354 20ZM20.9425 33.7071L33.9425 20.7071L32.5282 19.2929L19.5282 32.2929L20.9425 33.7071Z"
+                                        fill="#FEFEFE" />
+                                </svg>
                             </a>
                         </li>
                     </ul>
@@ -76,10 +84,12 @@
         </div>
     </nav>
 
-    <section id="hero" class="my-lg-5 d-flex flex-column-reverse flex-lg-row align-items-lg-center justify-content-between">
+    <section id="hero"
+        class="my-lg-5 d-flex flex-column-reverse flex-lg-row align-items-lg-center justify-content-between">
         <div class="align-self-start mt-lg-5 pt-lg-5" style="flex: 4;">
             <h1 class="fw-semibold fs-60">
-                <span>Become a</span><span class="text-highlight"> fuudy</span> driver and start <span class="text-highlight">earning</span>
+                <span>Become a</span><span class="text-highlight"> fuudy</span> driver and start <span
+                    class="text-highlight">earning</span>
                 today
             </h1>
             <p class="mt-5">Join the fuudy driver community and deliver local township meals to happy customers while
@@ -169,8 +179,8 @@
                 </label>
             </div>
             <div class="text-center">
-                <button type="submit" class="btn btn-secondary px-5 py-3 mt-3 px-72"
-                    style="width: fit-content;">Submit Message</button>
+                <button type="submit" class="btn btn-secondary px-5 py-3 mt-3 px-72" style="width: fit-content;">Submit
+                    Message</button>
             </div>
         </form>
     </section>
@@ -216,7 +226,7 @@
         <div class="pb-3 pb-lg-0 px-5 bg-primary d-flex flex-column flex-lg-row justify-content-between align-items-center"
             style="position: relative;">
             <img src="./assets/new-rider.png" alt="new-rider.png" style="z-index: 2;  transform: translateY(-10px);">
-            <h3 class="text-white mt-3 ms-5">
+            <h3 class="text-white mt-5 ms-0 ms-md-4">
                 <span>New Riders will get up to</span>
                 <span class="fw-semibold fs-38">R1750 Bonus</span>
             </h3>
@@ -227,7 +237,7 @@
         <div class="pb-3 pb-lg-0 px-5 bg-primary d-flex flex-column flex-lg-row-reverse justify-content-between align-items-center"
             style="position: relative;">
             <img src="./assets/fuddy-family.png" alt="fuddy-family.png" style="z-index: 2;" class="mt-4">
-            <h3 class="text-white mt-5 ms-5">
+            <h3 class="text-white mt-5">
                 <span>Become a</span>
                 <span class="fw-semibold fs-38">Fuudy Driver today</span>
             </h3>
@@ -267,7 +277,7 @@
 
     <section id="store"
         class="mx-lg-5 my-lg-5 d-flex flex-column-reverse flex-lg-row justify-content-between align-items-center">
-        <div>
+        <div class="w-100">
             <p class="text-highlight px-5 py-3" style="font-size: 18px; margin-top: -40px;">DOWNLOAD APP</p>
             <h2 class="fw-semibold mt-3 fs-48">Ready to start earning with fuudy?</h2>
             <p class="mt-3" style="font-size: 18px;">
@@ -285,7 +295,7 @@
                 </a>
             </div>
         </div>
-        <div>
+        <div class="w-100" style="scale: 1.2; transform: translateX(20px);">
             <img src="./assets/get-started.png" alt="get-started.png" class="img-fluid w-75 w-lg-100">
         </div>
     </section>
@@ -326,6 +336,15 @@
             </h5>
         </div>
     </footer>
+    <div class="modal fade flex" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog top-50 left-50">
+            <div class="modal-content">
+                <div class="modal-body">
+                    App Coming Soon
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
